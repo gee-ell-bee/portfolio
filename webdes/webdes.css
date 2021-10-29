@@ -1,0 +1,33 @@
+main {
+    grid-template-rows: 150px 125px auto auto;
+    grid-template-areas:
+    "a a a a b b b b"
+    "c c c d d d d d"
+    "e e e e e e e e"
+    "f f f f f f f f"
+    ;
+}
+
+.one {
+    grid-area: a;
+}
+
+.two {
+    grid-area: b;
+}
+
+.thr {
+    grid-area: c;
+}
+
+.fou {
+    grid-area: d;
+}
+
+.fiv {
+    grid-area: e;
+}
+
+.six {
+    grid-area: f;
+}

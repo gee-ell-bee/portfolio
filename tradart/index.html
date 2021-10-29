@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Grey's ARTDM173 Portfolio</title>
+    <meta name="author" content="Grey Larrain Bratt" />
+    <meta name="description" content="Grey Larrain Bratt's portfolio website" />
+    <meta name="keywords" content="web designer, visual art, painter, artist, UX design" />
+
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="favicon" content="../images/favicon.jpg" type="photo/jpg" />
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Grey</h1>
+        <h2>Larrain</h2>
+        <h2>Bratt</h2>
+        <h3>web designer &amp;</h3>
+        <h3>traditional artist</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a  href="../">homepage</a></li>
+            <li><a href="../about/">about</a></li>
+            <div class="navDrop">
+                <li><a onclick="myFunction()" class="dropbtn">work</a></li>
+                <div id="navDropdown" class="dropdown-content">
+                    <li><a href="../webdes/">web design</a></li>
+                    <li><a class="current" href="#">traditional art</a></li>
+                </div>
+            </div>
+            <li><a href="../contact/">contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+            <!---------------------------------- Tradit Art Homepage content -->
+        <div class="backg">
+            <h5>Background</h5>
+            <p>
+                Grey is an artist and designer raised in the SF Bay Area. They have been learning to speak Mandarin Chinese (reading and writing traditional Chinese characters) since they were five years old, and considers it their first passion. Though the subject of study often changes, their love of learning has remained constant.
+            </p>
+        </div>
+        <div class="image">
+            <picture>
+                <source
+                    srcset="images/headshot-small.png ,
+                        images/headshot-medium.png ,
+                        images/headshot-large.png "
+                    sizes="(min-width: ) ,
+                       (min-width: ) ,
+                        "
+                />
+            </picture>
+        <div class="learning">
+            <h5>Learning &amp; Skills</h5>
+            <p>
+                Grey studied history at Smith College c/o 2019, focusing on power, colonialism & social change, though officially concentrating in East Asian history. There they developed valuable tools in critical thinking, textual & historical analysis, and communication. After undergrad, they decided to pursue visual arts. They currently study studio art and web design at Diablo Valley College in the Bay.
+            </p>
+        </div>
+
+        <!----------------------------------- END Tradit Art Homepage content -->
+
+        <footer>
+            <div class="footName">
+                Grey Larrain Bratt
+            </div>
+            <div class="footInsta">
+                <a href="http://instagram.com/grey.bei" target="_blank">
+                    <img
+                        class="instag"
+                        src="../images/igicon.png"
+                        alt="Link to Grey's Instagram"
+                    />
+                </a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
