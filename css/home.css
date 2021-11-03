@@ -3,9 +3,7 @@ main {
     grid-template-areas:
     "a a a a b b b b"
     "c c c d d d d d"
-    "e e e e e e e e"
-    "f f f f f f f f"
-    ;
+    "e e e e e e e e";
 }
 
 .one {
@@ -34,6 +32,6 @@ main {
 
 @media only screen and (min-width: 800px) {
     main {
-        grid-template-rows: 150px 125px auto auto;
+        grid-template-rows: 150px 125px auto;
     }
 }

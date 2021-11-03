@@ -1,61 +1,74 @@
 //Toggle Function
 function toggleMenu() {
-    let el =
-        document.getElementById('navDropdown');
-    el.classList.toggle('show');
- }
- 
- //Rotate Carrot Function
- function rotateSvg() {
-   let es = document.querySelector('.carrot');
-   es.classList.toggle('rotate');
- }
- 
- //creating myBtn
- var btn = document.getElementById("myBtn");
- 
+  let el =
+    document.getElementById('navDropdown');
+  el.classList.toggle('show');
+}
 
- //event listeners
- btn.addEventListener("click", toggleMenu);
- btn.addEventListener("click", rotateSvg);
- 
+//Rotate Carrot Function
+function rotateSvg() {
+  let es = document.querySelector('.carrot');
+  es.classList.toggle('rotate');
+}
+
+//creating myBtn
+var btn = document.getElementById("myBtn");
+
+
+//event listeners
+btn.addEventListener("click", toggleMenu);
+btn.addEventListener("click", rotateSvg);
+
 
 // header hover function
 
- function changeHeader() {
-   let hov =
-      document.querySelector('.hov');
-   let h1 =
-      document.querySelector('h1');
 
-   hov.classList.toggle('onHover');
-   h1.classList.toggle('onHoverHead');
- }
+let hov =
+    document.querySelector('.hov'),
+  hovGhost =
+    document.querySelector('.hovGhost'),
+  main =
+    document.querySelector('main');
+// for desktop width variables:
+let h1 =
+    document.querySelector('h1'),
+  h2 =
+    document.querySelector('.h2'),
+  h3 =
+    document.querySelector('.h3');
 
- function expandHeader() {
-  let hov =
-   document.querySelector('.hov');
-  let h1 =
-   document.querySelector('h1');
-  
-  
-  if (hov.classList.contains('onHover')) {
-    hov.classList.remove('onHover');
-    h1.classList.remove('onHoverHead');
-  } else { }
- }
+function changeHeader() {
+  hov.classList.toggle('onHoverWhole'),
+  hovGhost.classList.toggle('onHoverGhost'),
+  main.classList.toggle('onHoverMain'),
+  h1.classList.toggle('onHoverHead'),
+  h2.classList.toggle('onHoverHead2'),
+  h3.classList.toggle('onHoverHead3');
+}
 
- //creating header variable
- var hd = document.querySelector('header');
+function expandHeader() {
+  if (hov.classList.contains('onHoverWhole')) {
+    hov.classList.remove('onHoverWhole'),
+    hovGhost.classList.remove('onHoverGhost'),
+    main.classList.remove('onHoverMain'),
+    h1.classList.remove('onHoverHead'),
+    h2.classList.remove('onHoverHead2'),
+    h3.classList.remove('onHoverHead3');
+  }
+}
+
+//creating header variable
+var hd = document.querySelector('.headerWrapper');
 
 
- //toggling z-index
+//toggling sizes event listeners
 
-// if (size > 799) {
-   hd.addEventListener("mouseenter", changeHeader);
-   hd.addEventListener("mouseleave", expandHeader);
- //} else {
-   hd.addEventListener("click", changeHeader);
- //}
- 
- //document.querySelector('a.dropbtn').onclick = toggleMenu();
+hd.addEventListener("mouseenter", changeHeader);
+hd.addEventListener("mouseleave", expandHeader);
+
+hd.addEventListener("click", changeHeader);
+
+//hovGhost.addEventListener("mouseenter", changeHeader);
+//hovGhost.addEventListener("mouseleave", expandHeader);
+
+//hovGhost.addEventListener("click", changeHeader);
