@@ -14,75 +14,115 @@
 
     <link rel="favicon" content="../images/favicon.jpg" type="photo/jpg" />
 
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="webdes.css" type="text/css" />
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
+
+    <script defer src="js/main.js"></script>
+
 </head>
+
 <body>
-    <header>
-        <h1>Grey</h1>
-        <h2>Larrain</h2>
-        <h2>Bratt</h2>
-        <h3>web designer &amp;</h3>
-        <h3>traditional artist</h3>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a  href="../">homepage</a></li>
-            <li><a href="../about/">about</a></li>
-            <div class="navDrop">
-                <li><a onclick="myFunction()" class="dropbtn">work</a></li>
-                <div id="navDropdown" class="dropdown-content">
-                    <li><a href="../webdes/">web design</a></li>
-                    <li><a class="current" href="#">traditional art</a></li>
+    <div id="whole">
+        <!-- #region header -->
+        <div class="headerWrapper">
+            <header>
+                <div class="hov">
+                    <div class="clickme"></div>
+                    <h1>Grey</h1>
+                    <h2 class="h2">Larrain</h2>
+                    <h2 class="h3">Bratt</h2>
                 </div>
+                <div class="hd2">
+                    <h3>web <span class="second-word">designer</span> &amp;</h3>
+                    <h3>traditional <span class="second-word">artist</span></h3>
+                </div>
+            </header>
+            <div class="hovGhost">
+                <h1 class="h1Ghost"></h1>
+                <h2 class="h2Ghost"></h2>
+                <h2 class="h3Ghost"></h2>
             </div>
-            <li><a href="../contact/">contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-            <!---------------------------------- Tradit Art Homepage content -->
-        <div class="backg">
-            <h5>Background</h5>
-            <p>
-                Grey is an artist and designer raised in the SF Bay Area. They have been learning to speak Mandarin Chinese (reading and writing traditional Chinese characters) since they were five years old, and considers it their first passion. Though the subject of study often changes, their love of learning has remained constant.
-            </p>
         </div>
-        <div class="image">
-            <picture>
-                <source
-                    srcset="images/headshot-small.png ,
-                        images/headshot-medium.png ,
-                        images/headshot-large.png "
-                    sizes="(min-width: ) ,
-                       (min-width: ) ,
-                        "
-                />
-            </picture>
-        <div class="learning">
-            <h5>Learning &amp; Skills</h5>
-            <p>
-                Grey studied history at Smith College c/o 2019, focusing on power, colonialism & social change, though officially concentrating in East Asian history. There they developed valuable tools in critical thinking, textual & historical analysis, and communication. After undergrad, they decided to pursue visual arts. They currently study studio art and web design at Diablo Valley College in the Bay.
-            </p>
-        </div>
+        <!-- #endregion -->
+        <!-- #region nav -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../">home</a>
+                </li>
+                <li>
+                    <a href="../about/">about</a>
+                </li>
+                <li>
+                    <span class="carrot"></span>
+                    <a id="myBtn" class="dropbtn">work</a>
+                    <ul id="navDropdown" class="hide">
+                        <li>
+                            <a href="../work/webdes/">web design</a>
+                        </li>
+                        <li>
+                            <a class="current" href="#">traditional art</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../contact/">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- #endregion -->
 
-        <!----------------------------------- END Tradit Art Homepage content -->
+        <main>
+            <!-- #region homepage content -->
+            <div class="box left box1 one">
+                <h4>
+                    <a class="boxLink" href="webdes/">Web Design &rarr;</a>
+                </h4>
+            </div>
+            <div class="image two">
+                <picture>
+                    <source srcset="images/webdeshead-small.png 175w,
+                            images/webdeshead-medium.png 350w,
+                            images/webdeshead-large.png 700w" sizes="(max-width: 175px) 175px,
+                           (max-width: 350px) 350px,
+                           700px" />
+                    <img src="images/webdeshead-medium.png" alt="Examples of Grey's web design projects" />
+                </picture>
+            </div>
+            <div class="image thr">
+                <picture>
+                    <source srcset="images/tradarthead-small.png 175w,
+                                images/tradarthead-medium.png 350w,
+                                images/tradarthead-large.png 700w" sizes="(max-width: 175px) 175px,
+                                (max-width: 600px) 350px,
+                                700px" />
+                    <img src="images/tradarthead-medium.png" alt="Examples of Grey's traditional art projects" />
+                </picture>
+            </div>
+            <div class="box right box2 fou">
+                <h4><a class="boxLink" href="tradart/">&larr; Traditional Art</a></h4>
+            </div>
 
-        <footer>
-            <div class="footName">
-                Grey Larrain Bratt
-            </div>
-            <div class="footInsta">
-                <a href="http://instagram.com/grey.bei" target="_blank">
-                    <img
-                        class="instag"
-                        src="../images/igicon.png"
-                        alt="Link to Grey's Instagram"
-                    />
-                </a>
-            </div>
-        </footer>
-    </main>
+            <!-- <div class="text ">
+                <h5>Homepage Title</h5>
+                <p>Home page text goes here&mdash;what do you wanna do with this?? Is it a place for featured content,
+                    additional introductory info, or what?? write some stuff when you have time.</p>
+            </div> -->
+
+            <!-- #endregion -->
+
+            <footer class="fiv">
+                <div class="footName">
+                    Grey Larrain Bratt
+                </div>
+                <div class="footInsta">
+                    <a href="http://instagram.com/grey.bei" target="_blank">
+                        <img class="instag" src="images/instabw.png" alt="Link to Grey's Instagram" />
+                    </a>
+                </div>
+            </footer>
+        </main>
 </body>
+
 </html>

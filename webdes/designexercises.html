@@ -13,13 +13,12 @@
 
     <meta name="robots" content="noindex, nofollow" />
 
-    <link rel="favicon" href="images/favicon.jpg" type="photo/jpg" />
+    <link rel="favicon" content="images/favicon.jpg" type="photo/jpg" />
 
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/home.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="designexercises.css" type="text/css" />
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
-
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 
 </head>
 
@@ -50,25 +49,25 @@
         <nav>
             <ul>
                 <li>
-                    <a class="current" href="#">home</a>
+                    <a href="../">home</a>
                 </li>
                 <li>
-                    <a href="about/">about</a>
+                    <a href="../about/">about</a>
                 </li>
                 <li>
                     <span class="carrot"></span>
                     <a id="myBtn" class="dropbtn">work</a>
                     <ul id="navDropdown" class="hide">
                         <li>
-                            <a href="work/webdes/">web design</a>
+                            <a class="current" href="index.html">web design</a>
                         </li>
                         <li>
-                            <a href="work/tradart/">traditional art</a>
+                            <a href="../work/tradart/">traditional art</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact/">contact</a>
+                    <a href="../contact/">contact</a>
                 </li>
             </ul>
         </nav>
@@ -76,36 +75,56 @@
 
         <main>
             <!-- #region homepage content -->
-            <div class="box left box1 one">
-                <h4>
-                    <a class="boxLink" href="webdes/">Web Design &rarr;</a>
+            <div class="text one">
+                <h5>Design Exercises</h5>
+            </div>
+            <div class="box left box2 two">
+                <h4><!-- !!!!! switch to a Button -->
+                    <a class="boxLink" href="noahfranklin.html">CSS Animations &rarr;</a>
                 </h4>
             </div>
-            <div class="image two">
+            <div class="image right thr">
                 <picture>
-                    <source srcset="images/webdeshead-small.png 175w,
-                            images/webdeshead-medium.png 350w,
-                            images/webdeshead-large.png 700w" sizes="(max-width: 175px) 175px,
+                    <source srcset="../images/noah-frank-bnb-small.png 175w,
+                            ../images/noah-frank-bnb-medium.png 350w,
+                            ../images/noah-frank-bnb-large.png 700w" sizes="(max-width: 175px) 175px,
                            (max-width: 350px) 350px,
                            700px" />
-                    <img src="images/webdeshead-medium.png" alt="Examples of Grey's web design projects" />
+                    <img src="../images/noah-frank-bnb-medium.png" alt="Samples of design content from Grey's Noah Frankling B&amp;B project" />
                 </picture>
             </div>
-            <div class="image thr">
+                <div class="image left fou">
+                    <picture>
+                        <source srcset="../images/designexp-small.png 175w,
+                                    ../images/designexp-medium.png 350w,
+                                    ../images/designexp-large.png 700w" sizes="(max-width: 175px) 175px,
+                                    (max-width: 600px) 350px,
+                                    700px" />
+                        <img src="../images/designexp-medium.png" alt="Examples of Grey's traditional art projects" />
+                    </picture>
+                </div>
+            <div class="box right box1 fiv">
+                <h4><!-- !!!!! switch to a Button -->
+                    <a class="boxLink" href="designexercises.html">&larr; CSS Grids</a>
+                </h4>
+            </div>
+            <div class="image left six">
                 <picture>
-                    <source srcset="images/tradarthead-small.png 175w,
-                                images/tradarthead-medium.png 350w,
-                                images/tradarthead-large.png 700w" sizes="(max-width: 175px) 175px,
+                    <source srcset="../images/designexp-small.png 175w,
+                                ../images/designexp-medium.png 350w,
+                                ../images/designexp-large.png 700w" sizes="(max-width: 175px) 175px,
                                 (max-width: 600px) 350px,
                                 700px" />
-                    <img src="images/tradarthead-medium.png" alt="Examples of Grey's traditional art projects" />
+                    <img src="../images/designexp-medium.png" alt="Examples of Grey's traditional art projects" />
                 </picture>
             </div>
-            <div class="box right box2 fou">
-                <h4><a class="boxLink" href="tradart/">&larr; Traditional Art</a></h4>
+            <div class="box right box3 sev">
+                <h4><!-- !!!!! switch to a Button -->
+                    <a class="boxLink" href="designexercises.html">&larr; Design Exercises</a>
+                </h4>
             </div>
 
-            <!--<div class="text fiv">
+            <!-- <div class="text ">
                 <h5>Homepage Title</h5>
                 <p>Home page text goes here&mdash;what do you wanna do with this?? Is it a place for featured content,
                     additional introductory info, or what?? write some stuff when you have time.</p>
@@ -113,13 +132,13 @@
 
             <!-- #endregion -->
 
-            <footer class="fiv">
+            <footer class="eig">
                 <div class="footName">
                     Grey Larrain Bratt
                 </div>
                 <div class="footInsta">
                     <a href="http://instagram.com/grey.bei" target="_blank">
-                        <img class="instag" src="images/instabw.png" alt="Link to Grey's Instagram" />
+                        <img class="instag" src="../images/instabw.png" alt="Link to Grey's Instagram" />
                     </a>
                 </div>
             </footer>

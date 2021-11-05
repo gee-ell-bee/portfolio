@@ -1,4 +1,7 @@
-//Toggle Function
+
+
+
+// Nav Toggle Function
 function toggleMenu() {
   let el =
     document.getElementById('navDropdown');
@@ -11,22 +14,23 @@ function rotateSvg() {
   es.classList.toggle('rotate');
 }
 
-//creating myBtn
+// creating Button
 var btn = document.getElementById("myBtn");
 
 
-//event listeners
+// Nav event listeners
 btn.addEventListener("click", toggleMenu);
 btn.addEventListener("click", rotateSvg);
 
 
-// header hover function
-
+// Header Hover Function
 
 let hov =
     document.querySelector('.hov'),
   hovGhost =
     document.querySelector('.hovGhost'),
+  clickMe =
+    document.querySelector('.clickme'),
   main =
     document.querySelector('main');
 // for desktop width variables:
@@ -40,6 +44,7 @@ let h1 =
 function changeHeader() {
   hov.classList.toggle('onHoverWhole'),
   hovGhost.classList.toggle('onHoverGhost'),
+  clickMe.classList.toggle('onHoverClickMe'),
   main.classList.toggle('onHoverMain'),
   h1.classList.toggle('onHoverHead'),
   h2.classList.toggle('onHoverHead2'),
@@ -50,6 +55,7 @@ function expandHeader() {
   if (hov.classList.contains('onHoverWhole')) {
     hov.classList.remove('onHoverWhole'),
     hovGhost.classList.remove('onHoverGhost'),
+    clickMe.classList.remove('onHoverClickMe'),
     main.classList.remove('onHoverMain'),
     h1.classList.remove('onHoverHead'),
     h2.classList.remove('onHoverHead2'),
