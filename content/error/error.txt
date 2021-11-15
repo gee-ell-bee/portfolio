@@ -1,0 +1,9 @@
+Title: Error
+
+----
+
+Text: Sorry, this page couldn't be found.
+
+----
+
+Link Name: Go to homepage?

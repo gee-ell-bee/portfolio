@@ -1,0 +1,27 @@
+Title: About
+
+----
+
+Page: About Grey
+
+----
+
+Id: about
+
+----
+
+Section 1 Title:
+
+----
+
+Section 1 Text:
+
+----
+
+Section 2 Title:
+
+----
+
+Section 2 Text:
+
+----
