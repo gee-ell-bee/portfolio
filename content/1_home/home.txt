@@ -2,6 +2,10 @@ Title: Home
 
 ----
 
-Id: home
+Page: Home
+
+----
+
+Dataid: home
 
 ----

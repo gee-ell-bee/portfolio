@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><?= $site->title() .': ' . $page->title(); ?></title>
+    <meta name="author" content="Grey Larrain Bratt" />
+    <meta name="description" content="<?= $site->description() ?>" />
+    <meta name="keywords" content="<?= $site->keywords() ?>" />
+
+    <link rel="favicon" href="<?= $site->url() ?>/assets/images/favicon.jpg" type="photo/jpg" />
+
+    <?= css('assets/css/main.css') ?>
+    <?= css('assets/css/' . $page->dataid() . '.css') ?>
+    <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
+
+    <script defer src="<?= $site->url() ?>/assets/js/main.js"></script>
+
+</head>
+
+<body id="<?= $page->dataid() ?>">
+    <div id="whole">
+        <!-- header -->
+        <?= snippet('top') ?>
+        <!-- nav -->
+        <?= snippet('nav') ?>
+
+        <main>
+            <!-- Web Design content -->
+            <div class="text one">
+                <h1><?= $page->title() ?></h1>
+            </div>
+            <picture class="left behind two">
+                <source srcset="../images/noahfranklinhead-small.png 175w,
+                        ../images/noahfranklinhead-medium.png 350w,
+                        ../images/noahfranklinhead-large.png 700w" sizes="(max-width: 175px) 175px,
+                        (max-width: 350px) 350px,
+                       700px" />
+                <img src="../images/noahfranklinmain-medium.png" alt="Samples of design content from Grey's Noah Franklin B&amp;B project" />
+            </picture>
+            </div>
+            <div class="box left boxCover two">
+                <a href="noahfranklin.html">
+                    <h3>The Noah Franklin &rarr;</h3>
+                </a>
+            </div>
+            <div class="box right box2 thr">
+                <ul>
+                    <li>Full site development</li>
+                    <li>Wireframes & Style tiles</li>
+                </ul>
+            </div>
+            <div class="box right box1 fou">
+                <ul>
+                    <li>CSS Grid</li>
+                    <li>CSS Animations</li>
+                </ul>
+            </div>
+            <picture class="right fiv behind">
+                <source srcset="../images/designexp-small.png 175w,
+                            ../images/designexp-medium.png 350w,
+                            ../images/designexp-large.png 700w" sizes="(max-width: 175px) 175px,
+                            (max-width: 600px) 350px,
+                            700px" />
+                <img src="../images/designexp-medium.png" alt="Examples of Grey's traditional art projects" />
+            </picture>
+            <div class="box right boxCover fiv">
+                <a href="designexp.html">
+                    <h3>&larr; Design Exercises</h3>
+                </a>
+            </div>
+
+            <?= snippet('footer') ?>
+        </main>
+</body>
+
+</html>

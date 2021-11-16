@@ -1,35 +1,29 @@
-Page: Design Experiments
-
-----
-
-Id: designexp
-
-----
-
 Title: Design Experiments
 
 ----
 
-Box_Link_1_Title: CSS Animations
+Page: Design Experiments
 
 ----
 
-Box_Link_1_Image:
+Dataid: designexp
 
 ----
 
-Box_Link_1_Link:
+Tags: css, css animation, animation, grid, coding
 
 ----
 
-Box_Link_2_Title: CSS Grids
+Boxonetitle: CSS Animations
 
 ----
 
-Box_Link_2_Image:
+Boxonetext:
 
 ----
 
-Box_Link_2_Link: 
+Boxtwotitle: CSS Grids
 
 ----
+
+Boxtwotext:

@@ -2,8 +2,10 @@ Title: Error
 
 ----
 
-Text: Sorry, this page couldn't be found.
+Page: Error
+
+-----
+
+Text: Sorry, this page couldn't be found. <a href="<?= $site->url() ?>">Go back to home?</a>
 
 ----
-
-Link Name: Go to homepage?
