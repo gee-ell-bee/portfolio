@@ -6,22 +6,6 @@ Page: Web Design
 
 ----
 
-Id: webdes
-
-----
-
-Box Link 1 Title: CSS Animations
-
-----
-
-Box Link 1 Image: 
-
-----
-
-Box Link 2 Title: CSS Grids
-
-----
-
-Box Link 2 Image: 
+Dataid: webdes
 
 ----

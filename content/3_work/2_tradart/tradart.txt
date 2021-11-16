@@ -6,6 +6,6 @@ Page: Traditional Art
 
 ----
 
-Id: tradart
+Dataid: tradart
 
 ----
