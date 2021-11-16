@@ -6,24 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><?= $site->title() .': ' . $page->title(); ?></title>
+    <title><?= $site->title() .': ' . $page->title() ?></title>
     <meta name="author" content="Grey Larrain Bratt" />
     <meta name="description" content="<?= $site->description() ?>" />
     <meta name="keywords" content="<?= $site->keywords() ?>" />
 
-    <meta name="robots" content="noindex, nofollow" />
-
     <link rel="favicon" href="<?=$site->url() ?>/assets/images/favicon.jpg" type="photo/jpg" />
 
     <?= css('assets/css/main.css') ?>
-    <?= css('assets/css/' . $page->id() . '.css') ?>
+    <?= css('assets/css/' . $page->dataid() . '.css') ?>
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
 
     <script defer src="<?= $site->url() ?>/assets/js/main.js"></script>
 
 </head>
 
-<body id="<?= $page->id() ?>">
+<body id="<?= $page->dataid() ?>">
     <div id="whole">
         <!-- header -->
         <?= snippet('top') ?>
@@ -31,10 +29,9 @@
         <?= snippet('nav') ?>
 
         <main>
-            <!-- #region page content -->
-            
-            <a class="box left box1" href="webdes/">
-                <h3>Web Design &rarr;</h3>
+            <!-- page content -->
+            <a class="box left box1" href="work/webdes">
+                <h3><?= page('work/webdes')->title() ?> &rarr;</h3>
             </a>
             <picture class="right">
                 <source srcset="<?= image('webdeshead-small.png')->url() ?> 175w,
@@ -53,7 +50,7 @@
                 <img src="<? image('tradarthead-medium.png')->url() ?>" alt="Examples of Grey's traditional art projects" />
             </picture>
 
-            <a class="box right box2" href="tradart/">
+            <a class="box right box2" href="work/tradart/">
                 <h3>&larr; Traditional Art</h3>
             </a>
 

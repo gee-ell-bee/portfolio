@@ -15,14 +15,14 @@
     <link rel="favicon" href="<?=$site->url() ?>/assets/images/favicon.jpg" type="photo/jpg" />
 
     <?= css('assets/css/main.css') ?>
-    <?= css('assets/css/' . $page->id() . '.css') ?>
+    <?= css('assets/css/' . $page->dataid() . '.css') ?>
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
 
     <script defer src="<?= $site->url() ?>/assets/js/main.js"></script>
 
 </head>
 
-<body id="<?= $page->id() ?>">
+<body id="<?= $page->dataid() ?>">
     <div id="whole">
         <!-- header -->
         <?= snippet('top') ?>
@@ -39,7 +39,7 @@
                     <a href="noahfranklin.html">
                         <h3>CSS Animations &rarr;</h3>
                     </a>
-                <p class="boxExpand"><?= $page('cssanimat.txt')->text()->kirbytext() ?></p>
+                <p class="boxExpand"><?= $page('cssanimat.txt')->text() ?></p>
             </div>
             <picture class="right">
                 <source class="animat"

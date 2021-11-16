@@ -14,14 +14,14 @@
     <link rel="favicon" href="<?= $site->url() ?>/assets/images/favicon.jpg" type="photo/jpg" />
 
     <?= css('assets/css/main.css') ?>
-    <?= css('assets/css/' . $page->id() . '.css') ?>
+    <?= css('assets/css/' . $page->dataid() . '.css') ?>
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
 
     <script defer src="<?= $site->url() ?>/assets/js/main.js"></script>
 
 </head>
 
-<body id="<?= $page->id() ?>">
+<body id="<?= $page->dataid() ?>">
     <div id="whole">
         <!-- header -->
         <?= snippet('top') ?>
@@ -29,17 +29,17 @@
         <?= snippet('nav') ?>
 
         <main>
-            <!-- #region homepage content -->
-            <div class="text">
-                <h1>Web Design</h1>
+            <!-- Web Design content -->
+            <div class="text one">
+                <h1><?= $page->title() ?></h1>
             </div>
             <picture class="left behind two">
-                <source srcset="../images/noahfrankbnbhead-small.png 175w,
-                        ../images/noahfrankbnbhead-medium.png 350w,
-                        ../images/noahfrankbnbhead-large.png 700w" sizes="(max-width: 175px) 175px,
+                <source srcset="../images/noahfranklinhead-small.png 175w,
+                        ../images/noahfranklinhead-medium.png 350w,
+                        ../images/noahfranklinhead-large.png 700w" sizes="(max-width: 175px) 175px,
                         (max-width: 350px) 350px,
                        700px" />
-                <img src="../images/noahfrankbnbmain-medium.png" alt="Samples of design content from Grey's Noah Franklin B&amp;B project" />
+                <img src="../images/noahfranklinmain-medium.png" alt="Samples of design content from Grey's Noah Franklin B&amp;B project" />
             </picture>
             </div>
             <div class="box left boxCover two">
@@ -72,14 +72,6 @@
                     <h3>&larr; Design Exercises</h3>
                 </a>
             </div>
-
-            <!-- <div class="text ">
-                <h5>Homepage Title</h5>
-                <p>Home page text goes here&mdash;what do you wanna do with this?? Is it a place for featured content,
-                    additional introductory info, or what?? write some stuff when you have time.</p>
-            </div> -->
-
-            <!-- #endregion -->
 
             <?= snippet('footer') ?>
         </main>
