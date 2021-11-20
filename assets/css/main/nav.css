@@ -1,0 +1,336 @@
+/* #region MOBILE nav */
+
+    /* nav containers */
+
+        nav {
+            position: fixed;
+            width: 100vw;
+            bottom: 0;
+            left: 0;
+            background-color: var(--asideBg);
+            z-index: 3;
+        }
+  
+  
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 1rem;
+  
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+  
+        nav li {
+            position: relative;
+            padding: .5rem 0;
+        }
+  
+    /* nav links */
+        nav li a {
+            color: var(--link);
+            transition: opacity .5s ease-in-out;
+        }
+
+        nav li a:hover {  opacity: 0.65;}
+  
+        a.current {
+            opacity: .8;
+            transition: all .5s ease-in-out;
+        }
+  
+        a.current:hover {  opacity: .5;}
+  
+    /* carrot */
+
+        .dropbtn {  cursor: pointer;}
+
+        li .carrot {
+            content: url(../images/carrot-mob.svg);
+  
+            position: absolute;
+            align-content: center;
+            left: clamp(-1.1rem, -4vw, -.5rem);
+            top: 35%;
+            width: clamp(10px, 4vw, 15px);
+            opacity: .8;
+  
+            transition: transform .5s ease-in-out;
+        }
+  
+        .rotate {
+            transform: rotate(180deg);
+            transition: transform .5s ease-in-out;
+        }
+  
+    /* #region MOBILE Nav Dropdown */
+  
+        /* nav dropdown container */
+            #navDropdown {
+                background-color: var(--asideBg);
+                line-height: 1.4rem;
+                font-size: .9rem;
+                color: var(--drpLnk);
+  
+                margin: auto;
+                padding: 3rem 1rem 2.5rem 1rem;
+                overflow: hidden;
+                display: flex; /* different from desktop */
+                flex-flow: column-reverse; /* different from desktop */
+                position: absolute; /* different from desktop */
+                min-width: max-content;
+                bottom: 100%; /* different from desktop */
+                left: -125%; /* different from desktop */
+            }
+  
+            /* nav dropdown transition */
+
+                .hide {  animation: hid .5s forwards;}
+                .show {  animation: show .5s forwards;}
+  
+                @keyframes hid {
+                    from {  height: 1rem;}
+                    to {
+                        height: 0;
+                        padding: 0;
+                    }
+                }
+  
+                @keyframes show {
+                    from {
+                        height: 0;
+                        padding: 0;
+                    }
+                    to {  height: 1rem;}
+                }
+
+    /* #endregion */
+  
+/* #endregion */
+
+/* #region Media Queries */
+
+    /* #region DESKTOP nav */
+    @media only screen and (min-width: 800px) {
+
+        /* nav containers */
+
+            nav {
+                width: 7rem;
+                position: fixed;
+                left: 5vw;
+                top: 50vh;
+                padding: 0;
+                height: clamp(6rem, 90vmin, 23rem);
+                padding-top: 5vh;
+                background: none;
+            }
+
+            nav ul {
+                width: min-content;
+                position: relative;
+                flex-flow: wrap column;
+            }
+
+            nav li {
+                padding: .25rem;
+            }
+
+        /* (current) links */
+
+            a.current {
+                opacity: 1;
+                border-bottom: 1px dotted var(--link);
+            }
+            a.current:hover {  border-color: var(--drpLnkHov);}
+
+        /* carrot */
+  
+            li .carrot {
+                content: url(assets/images/carrot.svg);
+
+                left: .5rem;
+                top: .75rem;
+            }
+
+        /* #region DESKTOP nav dropdown */
+
+            #navDropdown {
+                position: static;
+                flex-flow: column;
+                padding: 0;
+                margin: 0;
+
+                background-color: #00000000;
+                font-size: .85rem;
+            }
+
+            #navDropdown li {  padding: 0; }
+
+        /* dropdown links */
+
+            #navDropdown li a {
+                color: var(--drpLnk);
+                transition: all .5s ease-in-out;
+            }
+            #navDropdown li a:hover {  color: var(--drpLnkHov);}
+
+        @keyframes hid {
+            from {
+                height: 4rem;
+                padding: .5rem 0 0 0;
+            }
+
+            to {
+                height: 0;
+                padding: 0;
+            }
+        }
+
+        @keyframes show {
+            from {
+                height: 0;
+                padding: 0;
+            }
+
+            to {
+                height: 4rem;
+                padding: .5rem 0 0 0;
+            }
+        }
+    }
+    /* #endregion */
+
+    /* #region SHORT nav */
+
+    @media only screen and (max-height: 760px) and (min-width: 800px) {
+
+        /* nav containers */
+        
+            nav {
+                background-color: var(--asideBg);
+      
+                position: fixed;
+                width: 100vw;
+                height: 2rem;
+                top: auto;
+                padding: 3rem 1rem 2.5rem 1rem;
+                padding-top: inherit;
+                bottom: 0;
+                left: 0;
+                z-index: 3;
+            }
+      
+            nav ul {
+                font-size: 1rem;
+                text-align: center;
+                list-style: none;
+      
+                padding: 0;
+                margin: auto;
+                width: 100%;
+                max-width: 700px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+            }
+      
+            nav li {
+                position: relative;
+                padding: .5rem 0;
+            }
+      
+        /* nav links */
+      
+            nav li a {
+                transition: opacity .5s ease-in-out;
+            }
+            nav li a:hover {  opacity: 0.65;}
+      
+            a.current {
+                opacity: .8;
+                transition: all .5s ease-in-out;
+            }
+      
+            a.current:hover {  opacity: .5;}
+      
+            .dropbtn {  cursor: pointer;}
+      
+        /* carrot */
+      
+            li .carrot {
+                content: url(../images/carrot-mob.svg);
+                opacity: .8;
+      
+                position: absolute;
+                align-content: center;
+                left: clamp(-1.1rem, -4vw, -.5rem);
+                top: 35%;
+                width: clamp(10px, 4vw, 15px);
+      
+              transition: transform .5s ease-in-out;
+            }
+        
+            .rotate {
+                transform: rotate(180deg);
+                transition: transform .5s ease-in-out;
+            }
+      
+        /* nav dropdown */
+      
+            /* dropdown containers */
+      
+                #navDropdown {
+                    background-color: var(--asideBg);
+                    line-height: 1.6rem;
+                    font-size: .9rem;
+                    color: var(--drpLnk);
+      
+                    margin: auto;
+                    padding: 2.5rem 1.5rem 2rem 1.5rem;
+                    overflow: hidden;
+                    display: flex; /* different from MOBIL */
+                    flex-flow: column-reverse; /* different from MOBIL */
+                    position: absolute; /* different from MOBIL */
+                    min-width: max-content;
+                    bottom: 100%; /* different from MOBIL */
+                    left: -150%; /* different from MOBIL */
+                }
+      
+      
+                #navDropdown li {  padding: 0;}
+      
+            /*dropdown links */
+      
+                #navDropdown li a {
+                    color: var(--drpLnk);
+                    transition: all .5s ease-in-out;
+                    }
+                #navDropdown li a:hover {  color: var(--drpLnkHov);}
+      
+            /* dropdown transition CSS */
+      
+                .hide {  animation: hid .5s forwards;}
+                .show {  animation: show .5s forwards;}
+      
+                @keyframes hid {
+                    from {  height: 1rem;}
+                    to {
+                        height: 0;
+                        padding: 0;
+                    }
+                }
+      
+                @keyframes show {
+                    from {
+                        height: 0;
+                        padding: 0;
+                    }
+                    to {  height: 1rem;}
+                }
+    }
+    /* #endregion */
+/* #endregion */
