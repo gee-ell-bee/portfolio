@@ -1,0 +1,21 @@
+Title: Traditional Art
+
+----
+
+Page: Traditional Art
+
+----
+
+Dataid: tradart
+
+----
+
+Layout: fivthrsplit
+
+----
+
+Reverse: reverse
+
+----
+
+Boxstyle: box2

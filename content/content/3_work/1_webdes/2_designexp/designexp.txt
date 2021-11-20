@@ -1,0 +1,49 @@
+Title: Design Experiments
+
+----
+
+Page: Design Experiments
+
+----
+
+Dataid: designexp
+
+----
+
+Tags: css, css animation, animation, grid, coding
+
+----
+
+Layout: fivthrsplit
+
+----
+
+Reverse: reverse
+
+----
+
+Boxstyle: box3
+
+----
+
+Features: 
+                <ul>
+                    <li>CSS Grid</li>
+                    <li>CSS Ani&shy;ma&shy;tions</li>
+                </ul>
+
+----
+
+Boxonetitle: CSS Animations
+
+----
+
+Boxonetext: Duration: one week
+
+----
+
+Boxtwotitle: CSS Grids
+
+----
+
+Boxtwotext: Duration: one week

@@ -1,0 +1,33 @@
+Title: The Noah Franklin
+
+----
+
+Page: The Noah Franklin
+
+----
+
+Dataid: noahfranklin
+
+----
+
+Tags:
+
+----
+
+Features: 
+                <ul>
+                    <li>Full site develop&shy;ment</li>
+                    <li>Wire&shy;frames & Style tiles</li>
+                </ul>
+
+-----
+
+Reverse:
+
+----
+
+Boxstyle: box2
+
+----
+
+Layout: fivthrsplit

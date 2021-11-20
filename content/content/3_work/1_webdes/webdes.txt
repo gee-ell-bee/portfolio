@@ -1,0 +1,21 @@
+Title: Web Design
+
+----
+
+Page: Web Design
+
+----
+
+Dataid: webdes
+
+----
+
+Cardimg: underlay
+
+----
+
+Layout: evensplit
+
+----
+
+Boxstyle: box1
