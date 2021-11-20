@@ -1,4 +1,4 @@
-main {
+main article {
     grid-template-areas:
     "a a a a a a a a"
     "b b b b c c c c"
@@ -38,6 +38,10 @@ main {
     grid-area: h;
 }
 
+.las {
+    grid-area: z;
+}
+
 @media only screen and (max-width: 350px) {
     main {
         grid-template-rows: auto;
@@ -60,7 +64,7 @@ main {
 
 @media only screen and (min-width: 500px) {
     main {
-    grid-template-rows: auto 150px 125px 200px auto auto auto;
+    grid-template-rows: auto;
     grid-gap: 1.5rem;
     /*grid-template-areas:
     "a a a a a a a a"
