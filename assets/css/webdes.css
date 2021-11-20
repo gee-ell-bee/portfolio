@@ -1,11 +1,25 @@
-main {
-    grid-template-areas:
+/*main article {
+     DO NOT CHANGE!!, carried over from main.css:
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1.5rem; */
+
+    /*grid-template-areas:
     "a a a a a a a a"
-    "b b b b c c c c"
-    "d d d d e e e e"
+    "b b b b b c c c"
+    "d d d e e e e e"
     "f f f f f g g g"
-    "h h h h h h h h";
+    "h h h h h h h h"
+    "z z z z z z z z";
 }
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
 .one {
     grid-area: a;
 }
@@ -14,60 +28,71 @@ main {
     grid-area: b;
 }
 
-.thr {
-    grid-area: c;
+/* FORMATTING CARDS */
+/*
+.evensplit {
+    grid-template-areas:
+        "a a a a b b b b";
 }
 
-.fou {
-    grid-area: d;
+.card.reverse.evensplit {
+    grid-template-areas:
+        "b b b b a a a a";
 }
 
-.fiv {
-    grid-area: e;
+.thrfivsplit {
+    grid-template-areas:
+        "a a a b b b b b";
 }
 
-.six {
-    grid-area: f;
+.card.thrfivsplit.reverse {
+    grid-template-areas:
+        "b b b a a a a a";
 }
 
-.sev {
-    grid-area: g;
+.fivthrsplit {
+    grid-template-areas:
+        "a a a a a b b b";
 }
 
-.eig {
-    grid-area: h;
+.card.reverse.fivthrsplit {
+    grid-template-areas:
+        "b b b b b a a a";
 }
 
-@media only screen and (max-width: 350px) {
-    main {
-        grid-template-rows: auto;
+.twosixsplit {
+    grid-template-areas:
+        "a a b b b b b b";
+}
+
+.card.twosixsplit.reverse {
+    grid-template-areas:
+        "b b a a a a a a"
+}
+
+.onesevsplit {
+    grid-template-areas:
+        "a b b b b b b b";
+}
+
+.card.onesevsplit.reverse {
+    grid-template-areas:
+        "b a a a a a a a";
+}
+
+
+@media only screen and (max-width: 400px) {
+    .card {
         grid-gap: 0;
-        grid-template-areas: 
-        "a a a a a a a a"
-        "b b b b b b b b"
-        "c c c c c c c c"
-        "e e e e e e e e"
-        "d d d d d d d d"
-        "f f f f f f f f"
-        "g g g g g g g g"
-        "h h h h h h h h";
+        margin-bottom: 1.5rem;
+    }
+    .card img.behind {
+        max-height: 5rem;
     }
 
-    .thr, .six {
-        margin-bottom: 1rem;
+    .one, .two {
+        display: block;
+        width: 100vw;
     }
-}
 
-@media only screen and (min-width: 500px) {
-    main {
-    grid-template-rows: auto 150px 125px 200px auto auto auto;
-    grid-gap: 1.5rem;
-    /*grid-template-areas:
-    "a a a a a a a a"
-    "b b b c c c c c"
-    "d d d d e e e e"
-    "f f f f f g g g"
-    "h h h h h h h h"
-    ;*/
-    }
-}
+}*/
