@@ -1,0 +1,34 @@
+title: Contact
+navigation:
+    status: all
+    template: all
+
+columns:
+  pagecontent:
+    width: 2/3
+    type: fields
+    fields:
+      pagenm:
+        label: Page Title
+        type: text
+        maxlength: 17
+        help: Page headline
+        width: 1/1
+      message:
+        label: Message Placeholder
+        type: text
+        width: 1/1
+
+  pagemeta:
+    width: 1/3
+    sticky: true
+    type: fields
+    fields:
+      email:
+        label: Send Submissions To..
+        type: email
+        help: Location form submissions will be sent to
+      dataid:
+        label: CSS File ID Name
+        type: text
+        help: Recommended use the same as URL appendix

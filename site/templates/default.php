@@ -13,7 +13,7 @@
         <main>
             <!-- page content -->  
         <article>
-            <?= snippet('title') ?>
+            <?= snippet('titl') ?>
             <div class="text">
                 <?= $page->text()->kt() ?>
             </div>

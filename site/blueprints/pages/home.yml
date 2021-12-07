@@ -1,0 +1,35 @@
+title: Home
+navigation:
+    status: all
+    template: all
+
+columns:
+    head:
+        type: fields
+        width: 1/1
+        fields:
+            one:
+                type: headline
+                label: Mediums
+    main:
+        width: 2/3
+        sections:
+            drafts:
+                type: pages
+                query: site.page("work")
+                unlisted: true
+                layout: cardlets
+                template: Medium
+                info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
+                width: 2/3
+    side:
+        width: 1/3
+        sections:
+            published:
+                type: pages
+                headline: Published Projects
+                query: site.page("work")
+                layout: cardlets
+                width: 1/3
+                info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
+

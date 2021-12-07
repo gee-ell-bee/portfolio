@@ -1,0 +1,142 @@
+title: "Projects: Standard"
+navigation:
+  status: all
+  template: all
+
+columns:
+    parenthead:
+        width: 2/3
+        type: fields
+        fields:
+            first:
+                label: Parent Page Content
+                type: headline
+    sidebarhead:
+        width: 1/3
+        type: fields
+        fields:
+            third:
+                label: Files
+                type: headline
+    firstcol:
+        width: 1/3
+        sections:
+            parentcov:
+                type: fields
+                fields:
+                    cover:
+                        type: files
+                        label: Cover Image
+                        layout: cards
+                        size: tiny
+                        query: page.images
+                        image:
+                            ratio: 3/2
+                            cover: true
+                        min: 1
+                        max: 1
+    secondcol:
+        width: 1/3
+        sections:
+            parentfields:
+                type: fields
+                fields:
+                    row:
+                        label: "Cover Card: Box Ratio"
+                        type: select
+                        default: false
+                        options:
+                            onesevsplit: "1/7 Split"
+                            twosixsplit: "2/6 Split"
+                            thrfivsplit: "3/5 Split"
+                            evensplit: "4/4 Split"
+                            fivthrsplit: "5/3 Split"
+                            sixtwosplit: "6/2 Split"
+                            sevonesplit: "7/1 Split"
+                    reverse:
+                        label: "Cover Card: Box Order"
+                        type: select
+                        default: " "
+                        options:
+                            " ": Title + Image
+                            reverse: Image + Title
+                    boxstyle:
+                        label: "Cover Card: Title Box Style"
+                        type: select
+                        default: false
+                        options:
+                            box1: Light Camel Box
+                            box2: Rich Caramel Box
+                            box3: Deep Tan Box
+    thirdcol:
+        width: 1/3
+        sticky: true
+        sections:
+            files:
+                label: All Files
+                type: files
+                image:
+                    cover: true
+
+    bottomtwth:
+        width: 2/3
+        sections:
+            pagehead:
+                type: fields
+                fields:
+                    features:
+                        type: textarea
+                        size: small
+                        icon: list-bullet
+                        help: Short list of project highlights
+                    second:
+                        label: Page Content
+                        icon: display
+                        type: headline
+            pagefields:
+                type: fields
+                fields:
+                    pagenm:
+                        label: Page Title
+                        type: text
+                        icon: title
+                        maxlength: 17
+                        help: Page headline
+                        width: 1/2
+                        required: true
+                    dataid:
+                        label: HTML ID Name
+                        icon: template
+                        type: text
+                        help: Recommended use the same as URL appendix.
+                        width: 1/2
+                        required: true
+                    tags:
+                        type: tags
+                        width: 1/2
+                    tools:
+                        type: tags
+                        icon: tag
+                        width: 1/2
+                    year:
+                        before: Completed
+                        type: number
+                        minvalue: 2009
+                        maxlength: 4
+                        width: 1/3
+                    role:
+                        type: text
+                        width: 1/3
+                    duration:
+                        type: text
+                        width: 1/3
+                    link:
+                        label: Live Preview Link
+                        type: url
+                    overview:
+                        type: textarea
+                        size: small
+                        help: Best to only use this field if this is in a project gallery
+                    layout:
+                        type: blocks
+                        help: Best to use this field if the project is a direct child of a medium

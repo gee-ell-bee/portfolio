@@ -1,0 +1,11 @@
+title: Work
+columns:
+  - width: 1/1
+    sections:
+      pages:
+        headline: Mediums
+        type: pages
+        layout: cards
+        size: small
+        image:
+          cover: true

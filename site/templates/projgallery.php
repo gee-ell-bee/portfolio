@@ -12,16 +12,13 @@
 
         <main>
             <article>
-
                 <?= snippet('titl') ?>
-            
-                <?= snippet('homecards') ?>
-                
+                <?= snippet('cards') ?>
+                <a class="button" href="<?= $page->parent()->url() ?>"><span class="arrow">&larr;</span> Return to <?= $page->parent()->title() ?></a>
             </article>
 
             <?= snippet('footer') ?>
-
         </main>
-        
 </body>
+
 </html>

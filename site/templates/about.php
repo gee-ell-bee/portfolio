@@ -15,16 +15,17 @@
                 <?= snippet('titl') ?>
                 <div class="aboutTop">
                     <img class="left aboutImg" src="<?= $page->image()->resize(400)->url() ?>" />
-                    <h2><?= $page->headerone() ?></h2>
+                    <?php if($page->headerone()->isNotEmpty()) : ?><h2><?= $page->headerone() ?></h2><?php endif ?>
                     <p>
                         <?= $page->textone() ?>
                     </p>
                 </div>
 
-                <h2><?= $page->headertwo() ?></h2>
-                <p>
+                <?php if($page->headertwo()->isNotEmpty()): ?><h2><?= $page->headertwo() ?></h2><?php endif ?>
+                <?php if($page->texttwo()->isNotEmpty()): ?><p>
                     <?= $page->texttwo() ?>
-                </p>
+                </p><?php endif ?>
+                <a class="button fwd" href="<?= $site->url() ?>">See Grey&#8217;s Work <span class="arrow">&rarr;</span></a>
             </article>
             <?= snippet('footer') ?>
         </main>

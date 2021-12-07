@@ -16,9 +16,9 @@
                     <span class="carrot"></span>
                     <a id="myBtn" class="dropbtn">work</a>
                     <ul id="navDropdown" class="hide">
-                    <?php foreach (page('work')->children()->listed() as $item): ?>
+                    <?php foreach (page('work')->children()->listed() as $medium): ?>
                         <li>
-                            <a href="<?= $item->url() ?>"><?= $item->page()->lower() ?></a>
+                            <a href="<?= $medium->url() ?>"><?= $medium->title()->lower() ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>

@@ -11,17 +11,20 @@
         <?= snippet('nav') ?>
 
         <main>
-            <article>
 
-                <?= snippet('titl') ?>
+            <article>
             
-                <?= snippet('homecards') ?>
-                
+                <?= snippet('titl') ?>
+
+                <?= snippet('projects') ?>
+
+                <a class="button" href="<?= $site->url() ?>"><span class="arrow">&larr;</span> Return to Home</a>
+
             </article>
 
             <?= snippet('footer') ?>
-
+            
         </main>
-        
 </body>
+
 </html>
