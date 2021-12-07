@@ -49,7 +49,7 @@
         .dropbtn {  cursor: pointer;}
 
         li .carrot {
-            content: url(../images/carrot-mob.svg);
+            content: url(../../../content/carrot-mob.svg);
   
             position: absolute;
             align-content: center;
@@ -150,7 +150,7 @@
         /* carrot */
   
             li .carrot {
-                content: url(assets/images/carrot.svg);
+                content: url(../../../content/carrot.svg);
 
                 left: .5rem;
                 top: .75rem;
@@ -204,7 +204,14 @@
     }
     /* #endregion */
 
-    /* #region SHORT nav */
+    /* #region WIDE nav */
+    @media only screen and (min-height: 761px) and (min-width: 800px) {
+        nav {
+            background-color: none;
+        }
+    }
+
+    /* #region SHORTER nav */
 
     @media only screen and (max-height: 760px) and (min-width: 800px) {
 

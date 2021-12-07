@@ -1,0 +1,209 @@
+/* ABOUT PAGE GRID GOES HERE */
+    main article {
+        /* DO NOT CHANGE!!, carried over from main.css:
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1.5rem; */
+
+        grid-template-rows: auto;
+        grid-template-areas:
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "c c c c c c c c"
+        "d d d d d d d d"
+        "e e e e e e e e"
+        "f f f f f f f f";
+    }
+
+    main article *:nth-child(1) {
+        grid-area: a;
+    }
+
+    main article *:nth-child(2) {
+        grid-area: b;
+    }
+
+    main article *:nth-child(3) {
+        grid-area: c;
+    }
+
+    main article *:nth-child(4) {
+        grid-area: d;
+    }
+
+    main article *:nth-child(5) {
+        grid-area: e;
+    }
+
+    main article *:nth-child(6) {
+        grid-area: f;
+    }
+
+/* #region MOBILE Contact page */
+
+    /* contact page: universal */
+
+        #contact form {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+        }
+        
+        #contact fieldset {
+            flex: 0 1 100%;
+            border: none;
+            display: flex;
+            width: max-content;
+            padding: .25rem;
+            flex-flow: wrap row;
+        }
+        
+        #contact fieldset * {
+            flex: 0 0 100%;
+        }
+        
+        
+        #contact input:invalid {
+            border: 2px solid var(--formError);
+        }
+        
+        #contact label,
+        #contact legend {
+            flex: 0 0 100%;
+        }
+        
+        #contact fieldset.radio {
+            justify-content: center;
+        }
+        
+        #contact fieldset.radio input {
+            flex: 0 0;
+        }
+        
+        #contact fieldset.radio label {
+            flex: 0 0 max-content;
+        }
+        
+        #contact input:optional {
+            border: 1px solid var(--formPrefill);
+            box-shadow: 1px 1px 1px rgba(139, 92, 3, 0.1);
+        }
+        
+        #contact input,
+        #contact textarea {
+            font-size: calc(var(--bodyTextSz) * .8);
+            font-family: 'mencken-std-text', Rufina, Georgia, serif;
+            line-height: var(--bodyLineHeight);
+            padding-left: .5rem;
+            border: 1px solid var(--formFieldsBorder);
+            border-radius: 5px 5px;
+            box-shadow: 1px 1px 1px rgba(139, 92, 3, 0.3);
+            margin-bottom: .25rem;
+        }
+        
+        #contact input[type="radio"] {
+            box-shadow: none;
+        }
+        
+        #contact textarea {
+            width: 96%;
+        }
+        
+        #contact input::placeholder,
+        #contact textarea::placeholder {
+            color: var(--formPrefill);
+        }
+        
+        
+        #contact input:placeholder-shown, #contact textarea:placeholder-shown {
+            border: 1px solid var(--formFieldsBorder);
+        }
+    
+    /* contact page: unique elements */
+        
+        
+        #contact fieldset label[for="msg"] {
+            height: min-content;
+        }
+        
+        #contact fieldset textarea {
+            height: 6rem;
+            margin-top: 0;
+        }
+        
+        #contact input[type="submit"] {
+            flex: 0 0 45%;
+            margin: 2rem auto auto auto;
+            height: min-content;
+            
+            background: var(--buttonBg);
+            cursor:pointer;
+            transition: all 1s ease-in-out;
+        }
+        
+        #contact input[type="submit"]:hover {
+            background: .7;
+        }
+    
+  /* #endregion */
+
+@media only screen and (max-width: 350px) {
+    main article {
+        grid-template-rows: auto;
+        grid-gap: 0;
+        grid-template-areas: 
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "c c c c c c c c"
+        "e e e e e e e e"
+        "d d d d d d d d"
+        "f f f f f f f f";
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* #region DESK Contact page */
+        #contact form {
+            margin-top: 2rem;
+        }
+
+        #contact label,
+        legend {
+            margin: 0 .5rem;
+        }
+
+        #contact input,
+        #contact textarea {
+            font-size: calc(var(--bodyTextSz) * .8);
+            font-family: 'mencken-std-text', Rufina, Georgia, serif;
+            line-height: var(--bodyLineHeight);
+            padding-left: .5rem;
+            border: 1px solid #838383;
+            border-radius: 5px 5px;
+            box-shadow: 1px 1px 1px rgba(139, 92, 3, 0.3);
+        }
+
+        #contact fieldset.method legend {
+            text-align: center;
+            padding: 0 .5rem;
+        }
+
+        #contact label[for="phone"] {
+            position: relative;
+        }
+
+        #contact fieldset label[for="msg"] {
+            margin-left: .75rem;
+        }
+
+        #contact fieldset textarea#msg {
+            width: 100%;
+        }
+
+        #contact input[type="submit"] {
+            margin: 1rem auto auto auto;
+            height: min-content;
+        }
+
+    /* #endregion */
+}

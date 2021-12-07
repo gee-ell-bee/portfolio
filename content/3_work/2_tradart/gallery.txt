@@ -1,0 +1,33 @@
+Title: Traditional Art
+
+----
+
+Pagenm: Traditional Art
+
+----
+
+Dataid: tradart
+
+----
+
+Cover:
+
+- head.png
+
+----
+
+Boxstyle: box2
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse: reverse
+
+----
+
+Cardimg: 
+
+----

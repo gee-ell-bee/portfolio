@@ -1,0 +1,99 @@
+/* ABOUT PAGE GRID GOES HERE */
+    main article {
+        /* DO NOT CHANGE!!, carried over from main.css:
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1.5rem; */
+
+        grid-template-rows: auto;
+        grid-template-areas:
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "c c c c c c c c"
+        "d d d d d d d d"
+        "e e e e e e e e"
+        "f f f f f f f f";
+    }
+
+    main article *:nth-child(1) {
+        grid-area: a;
+    }
+
+    main article *:nth-child(2) {
+        grid-area: b;
+    }
+
+    main article *:nth-child(3) {
+        grid-area: c;
+    }
+
+    main article *:nth-child(4) {
+        grid-area: d;
+    }
+
+    main article *:nth-child(5) {
+        grid-area: e;
+    }
+
+    main article *:nth-child(6) {
+        grid-area: f;
+    }
+
+/* #region About page */
+
+    .aboutTop {
+        margin-top: 1.5rem;
+    }
+    
+    .aboutImg {
+        display: block;
+        object-fit: contain;
+        max-width: auto;
+        float: left;
+        width: 40%;
+        outline: 3px solid white;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.637);
+        height: auto;
+        margin: .25rem 2rem 1rem 0;
+    }
+    
+    .aboutTop h2 {
+        display: inline-block;
+    }
+
+    
+/* #endregion */
+
+@media only screen and (min-width: 800px) and (max-width: 840px) {
+    .aboutImg {
+        width: 35%;
+        margin: .25rem 1.5rem 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main article {
+        grid-template-rows: auto;
+        grid-gap: 0;
+        grid-template-areas: 
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "c c c c c c c c"
+        "e e e e e e e e"
+        "d d d d d d d d"
+        "f f f f f f f f";
+    }
+
+    .aboutImg {
+        width: 90%;
+        object-fit: cover;
+        object-position: 0 30%;
+        max-height: 40vh;
+        float: right;
+        margin: 0 auto 2rem auto;
+    }
+
+    main p {
+        margin: .5rem 1rem 1.5rem 1rem;
+    }
+}

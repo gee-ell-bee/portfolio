@@ -1,0 +1,44 @@
+Title: Design Exercises
+
+----
+
+Cover:
+
+- projecthead.png
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse: reverse
+
+----
+
+Boxstyle: box3
+
+----
+
+Features:
+
+<ul>
+    <li>CSS Grid</li>
+    <li>CSS Ani&shy;ma&shy;tions</li>
+</ul>
+
+----
+
+Pagenm: Design Exercises
+
+----
+
+Dataid: designex
+
+----
+
+Cardimg: 
+
+----
+
+Tags: css, css animation, animation, grid, coding

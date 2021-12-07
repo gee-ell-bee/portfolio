@@ -1,0 +1,37 @@
+/* Extra forms for Contact page */
+#contact label[for="phone"] {
+  position: relative;
+}
+
+#contact span.tellab {
+  width: max-content;
+  margin-left: .5rem;
+  color: var(--formError);
+  font-size: smaller;
+  top: 0;
+  position: absolute;
+}
+
+#contact fieldset.method {
+  display: flex;
+  margin: .5rem;
+  border: 1px solid var(--formFieldsBorder);
+  flex: 0 0 96%;
+  text-align: center;
+}
+
+#contact fieldset.method legend {
+  padding: 0 .5rem;
+}
+
+#contact fieldset.method input {
+  margin: auto 0;
+}
+
+#contact fieldset.method label {
+  margin: auto 1rem auto .25rem;
+}
+
+#contact fieldset.method label:last-of-type {
+  margin: auto 0 auto .25rem;
+}

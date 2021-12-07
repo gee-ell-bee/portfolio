@@ -6,6 +6,6 @@ Page: Error
 
 -----
 
-Text: Sorry, this page couldn't be found. <a href="<?= $site->url() ?>">Go back to home?</a>
+Text: Sorry, this page couldn't be found. [Go back to home?](/)
 
 ----

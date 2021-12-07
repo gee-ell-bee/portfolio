@@ -1,0 +1,31 @@
+Title: Web Design
+
+----
+
+Cover:
+
+- head.png
+
+----
+
+Row: evensplit
+
+----
+
+Reverse: 
+
+----
+
+Pagenm: Web Design
+
+----
+
+Dataid: webdes
+
+----
+
+Cardimg: underlay
+
+----
+
+Boxstyle: box1

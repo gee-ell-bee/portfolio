@@ -1,11 +1,29 @@
-//Toggle Function
+// BOX Toggle Function
+function toggleDesc(evt) {
+  let boxdesc = evt.target.parentElement.nextElementSibling.firstElementChild;
+  console.log(boxdesc);
+  boxdesc.classList.toggle('sho');
+}
+
+// creating card button
+var cardname = document.querySelectorAll('.expander');
+
+
+//NAV Toggle Function
 function toggleMenu() {
   let el =
     document.getElementById('navDropdown');
   el.classList.toggle('show');
 }
 
-//Rotate Carrot Function
+// BOX Rotate Caret Function
+function rotateSpan(evt) {
+  let boxspan = evt.target.firstElementChild;
+  console.log(boxspan);
+  boxspan.classList.toggle('rotate');
+}
+
+//Rotate Caret Function
 function rotateSvg() {
   let es = document.querySelector('.carrot');
   es.classList.toggle('rotate');
@@ -15,10 +33,15 @@ function rotateSvg() {
 var btn = document.getElementById("myBtn");
 
 
-//event listeners
+//nav event listeners
 btn.addEventListener("click", toggleMenu);
 btn.addEventListener("click", rotateSvg);
 
+// card event listeners
+for (card of cardname) {
+  card.addEventListener("click", toggleDesc);
+  card.addEventListener("click", rotateSpan);
+}
 
 // header hover function
 
@@ -67,8 +90,3 @@ hd.addEventListener("mouseenter", changeHeader);
 hd.addEventListener("mouseleave", expandHeader);
 
 hd.addEventListener("click", changeHeader);
-
-//hovGhost.addEventListener("mouseenter", changeHeader);
-//hovGhost.addEventListener("mouseleave", expandHeader);
-
-//hovGhost.addEventListener("click", changeHeader);

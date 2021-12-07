@@ -2,7 +2,7 @@ Title: Contact
 
 ----
 
-Page: Contact
+Pagenm: Contact Grey
 
 ----
 
@@ -10,3 +10,10 @@ Dataid: contact
 
 ----
 
+Email: margaretbratt@gmail.com
+
+----
+
+Message: Nice to meet you!
+
+----

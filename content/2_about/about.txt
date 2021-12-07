@@ -2,26 +2,28 @@ Title: About
 
 ----
 
-Page: About Grey
+Pagenm: About Grey
 
 ----
 
-Id: about
+Dataid: about
 
 ----
 
-Section 1 Title:
+Portrait: profile1.jpg
 
 ----
 
-Section 1 Text:
+Headerone: Background
 
 ----
 
-Section 2 Title:
+Textone: Grey is an artist and des&shy;igner raised in the SF Bay Area. They have been learn&shy;ing to speak Man&shy;darin Chinese (reading and writing trad&shy;itional Chinese char&shy;acters) since they were five years old, and considers it their first passion. Though the subject of study often changes, that same love of learning continues to drive their work.
 
 ----
 
-Section 2 Text:
+Headertwo: Learning &amp; Skills
 
 ----
+
+Texttwo: Grey studied history at Smith College c/o 2019, focusing on power, colonial&shy;ism & social change, though offi&shy;cially concen&shy;trating in East Asian history. At Smith they devel&shy;oped valuable tools in crit&shy;ical thinking, textual & his&shy;torical analysis, and com&shy;mun&shy;ication. After undergrad, they moved back to the Bay and decided to pursue visual arts. They cur&shy;rently study studio art and web design at Diablo Valley College.

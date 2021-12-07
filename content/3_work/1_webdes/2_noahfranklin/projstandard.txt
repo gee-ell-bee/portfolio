@@ -1,0 +1,68 @@
+Title: The Noah Franklin
+
+----
+
+Cover:
+
+- projecthead.png
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse: 
+
+----
+
+Pagenm: The Noah Franklin
+
+----
+
+Year: 2020
+
+----
+
+Role: 
+
+----
+
+Duration: 
+
+----
+
+Tools: Balsamiq, HTML & CSS
+
+----
+
+Overview: First complete website I created.
+
+----
+
+Dataid: noahfranklin
+
+----
+
+Tags: 
+
+----
+
+Cardimg: 
+
+----
+
+Features:
+
+<ul>
+    <li>Full site develop&shy;ment</li>
+    <li>Wire&shy;frames & Style tiles</li>
+</ul>
+
+----
+
+Boxstyle: box2
+
+----
+
+Link: http://www.greybei.rf.gd/artdm173/labs/lab2/

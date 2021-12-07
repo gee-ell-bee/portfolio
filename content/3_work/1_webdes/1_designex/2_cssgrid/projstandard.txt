@@ -1,0 +1,63 @@
+Title: CSS Grid
+
+----
+
+Cover:
+
+- projecthead.png
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse: 
+
+----
+
+Role: 
+
+----
+
+Duration: One week
+
+----
+
+Tools: 
+
+----
+
+Overview: Experiments both using the grid and breaking it.
+
+----
+
+Pagenm: CSS Grid
+
+----
+
+Dataid: cssgrid
+
+----
+
+Tags: css, css grid, grid, coding
+
+----
+
+Cardimg: 
+
+----
+
+Boxstyle: box1
+
+----
+
+Imgclass: 
+
+----
+
+Features: Responsive layout
+
+----
+
+Link: http://www.greybei.rf.gd/artdm173/labs/lab2/

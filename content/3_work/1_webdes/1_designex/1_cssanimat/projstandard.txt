@@ -1,0 +1,61 @@
+Title: CSS Anima&shy;tions
+
+----
+
+Cover: - projecthead.png
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse: reverse
+
+----
+
+Boxstyle: box3
+
+----
+
+Features: Responsive layout
+
+----
+
+Pagenm: CSS Animations
+
+----
+
+Dataid: cssanimat
+
+----
+
+Tags: css, css animation, animation, coding
+
+----
+
+Tools: 
+
+----
+
+Year: 2021
+
+----
+
+Role: 
+
+----
+
+Duration: One week
+
+----
+
+Link: http://www.greybei.rf.gd/artdm173/labs/lab3/
+
+----
+
+Overview: 
+
+----
+
+Cardimg: 

@@ -1,0 +1,98 @@
+/*main article {
+     DO NOT CHANGE!!, carried over from main.css:
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1.5rem; */
+
+    /*grid-template-areas:
+    "a a a a a a a a"
+    "b b b b b c c c"
+    "d d d e e e e e"
+    "f f f f f g g g"
+    "h h h h h h h h"
+    "z z z z z z z z";
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.one {
+    grid-area: a;
+}
+
+.two {
+    grid-area: b;
+}
+
+/* FORMATTING CARDS */
+/*
+.evensplit {
+    grid-template-areas:
+        "a a a a b b b b";
+}
+
+.card.reverse.evensplit {
+    grid-template-areas:
+        "b b b b a a a a";
+}
+
+.thrfivsplit {
+    grid-template-areas:
+        "a a a b b b b b";
+}
+
+.card.thrfivsplit.reverse {
+    grid-template-areas:
+        "b b b a a a a a";
+}
+
+.fivthrsplit {
+    grid-template-areas:
+        "a a a a a b b b";
+}
+
+.card.reverse.fivthrsplit {
+    grid-template-areas:
+        "b b b b b a a a";
+}
+
+.twosixsplit {
+    grid-template-areas:
+        "a a b b b b b b";
+}
+
+.card.twosixsplit.reverse {
+    grid-template-areas:
+        "b b a a a a a a"
+}
+
+.onesevsplit {
+    grid-template-areas:
+        "a b b b b b b b";
+}
+
+.card.onesevsplit.reverse {
+    grid-template-areas:
+        "b a a a a a a a";
+}
+
+
+@media only screen and (max-width: 400px) {
+    .card {
+        grid-gap: 0;
+        margin-bottom: 1.5rem;
+    }
+    .card img.behind {
+        max-height: 5rem;
+    }
+
+    .one, .two {
+        display: block;
+        width: 100vw;
+    }
+
+}*/

@@ -1,0 +1,59 @@
+Title: Portfolio
+
+----
+
+Pagenm: Portfolio Project
+
+----
+
+Dataid: portfolio
+
+----
+
+Tags:
+
+----
+
+Cardimg:
+
+----
+
+Features: 
+                <ul>
+                    <li>Full site develop&shy;ment</li>
+                    <li>CMS</li>
+                </ul>
+
+----
+
+Row: fivthrsplit
+
+-----
+
+Reverse:
+
+----
+
+Boxstyle: box1
+
+
+----
+
+Role:
+
+----
+
+Duration:
+
+----
+
+Overview: Second complete website, created integrating a content management system. This site *is* the live preview.
+----
+
+Tools: Figma, CMS, Kirby, HTML & CSS, Javascript
+
+----
+
+Link: 
+
+----
