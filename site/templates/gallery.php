@@ -11,20 +11,22 @@
         <?= snippet('nav') ?>
 
         <main>
-
             <article>
-            
                 <?= snippet('titl') ?>
 
-                <?= snippet('projects') ?>
+                <?php if ($page->cardimg()->isNotEmpty()): ?>
+                    <?= snippet('cards/projects') ?>
+                    <?php else : ?>
+                        <?= snippet('cards/homecards') ?>
+                <?php endif ?>
 
-                <a class="button" href="<?= $site->url() ?>"><span class="arrow">&larr;</span> Return to Home</a>
-
+                <a class="button" href="<?= $site->url() ?>">
+                    <span class="arrow">&larr;</span> Return to Home
+                </a>
             </article>
 
             <?= snippet('footer') ?>
-            
         </main>
+    </div>
 </body>
-
 </html>

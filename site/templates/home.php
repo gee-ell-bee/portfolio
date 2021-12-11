@@ -15,13 +15,12 @@
 
                 <?= snippet('titl') ?>
             
-                <?= snippet('homecards') ?>
+                <?= snippet('cards/homecards') ?>
                 
             </article>
 
             <?= snippet('footer') ?>
-
         </main>
-        
+    </div>
 </body>
 </html>

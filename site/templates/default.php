@@ -11,15 +11,18 @@
         <?= snippet('nav') ?>
 
         <main>
-            <!-- page content -->  
-        <article>
-            <?= snippet('titl') ?>
-            <div class="text">
-                <?= $page->text()->kt() ?>
-            </div>
-        </article>
+            <!-- page content -->
+            <article>
+                <?= snippet('titl') ?>
+
+                <div class="text">
+                    <?= $page->text()->kt() ?>
+                </div>
+            </article>
+        
             <?= snippet('footer') ?>
         </main>
+    </div>
 </body>
 
 </html>

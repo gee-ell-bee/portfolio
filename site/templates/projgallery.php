@@ -13,12 +13,14 @@
         <main>
             <article>
                 <?= snippet('titl') ?>
-                <?= snippet('cards') ?>
+                <?= snippet('cards/projectception') ?>
+
                 <a class="button" href="<?= $page->parent()->url() ?>"><span class="arrow">&larr;</span> Return to <?= $page->parent()->title() ?></a>
             </article>
 
             <?= snippet('footer') ?>
         </main>
+    </div>
 </body>
 
 </html>
