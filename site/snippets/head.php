@@ -9,7 +9,6 @@
         <?php else : ?>
             <title><?= $site->title() .': ' . $page->title(); ?></title>
     <?php endif ?>
-    <title><?= $site->title() ?> .': ' . $page->title(); ?></title>
     <meta name="author" content="Grey Larrain Bratt" />
     <meta name="description" content="<?= $site->description() ?>" />
     <meta name="keywords" content="<?= $site->keywords() ?>" />
