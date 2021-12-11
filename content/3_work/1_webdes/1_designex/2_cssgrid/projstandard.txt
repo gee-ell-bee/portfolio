@@ -61,3 +61,7 @@ Features: Responsive layout
 ----
 
 Link: http://www.greybei.rf.gd/artdm173/labs/lab2/
+
+----
+
+Template: files/coverimg

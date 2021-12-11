@@ -1,0 +1,33 @@
+Title: Web Design
+
+----
+**this is the field here, and kirby puts the file i selected on a new line with
+the dash so don't worry about doing that yourself**
+
+Cover:
+
+- head.png
+
+----
+
+Row: evensplit
+
+----
+
+Reverse: 
+
+----
+
+Pagenm: Web Design
+
+----
+
+Dataid: webdes
+
+----
+
+Cardimg: underlay
+
+----
+
+Boxstyle: box1

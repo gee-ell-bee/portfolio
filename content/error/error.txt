@@ -2,10 +2,8 @@ Title: Error
 
 ----
 
-Page: Error
-
------
-
-Text: Sorry, this page couldn't be found. [Go back to home?](/)
+Pagenm: Error
 
 ----
+
+Text: Sorry, this page couldn't be found. (link: ?= $site->url() ?> text: Go back to Home?)

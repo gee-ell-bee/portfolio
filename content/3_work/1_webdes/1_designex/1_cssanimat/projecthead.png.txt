@@ -5,3 +5,5 @@ Alt:
 Class: animat
 
 ----
+
+Template: files/coverimg

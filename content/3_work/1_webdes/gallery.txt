@@ -16,6 +16,10 @@ Reverse:
 
 ----
 
+Boxstyle: box1
+
+----
+
 Pagenm: Web Design
 
 ----
@@ -25,7 +29,3 @@ Dataid: webdes
 ----
 
 Cardimg: underlay
-
-----
-
-Boxstyle: box1

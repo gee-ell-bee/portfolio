@@ -1,0 +1,39 @@
+Title: Paintings
+
+----
+
+Cover:
+
+- dvc_paint2_photorealist.jpg
+
+----
+
+Row: evensplit
+
+----
+
+Reverse: reverse
+
+----
+
+Boxstyle: box3
+
+----
+
+Pagenm: Paintings
+
+----
+
+Dataid: 
+
+----
+
+Cardimg: 
+
+----
+
+Features: 
+
+----
+
+Tags: 

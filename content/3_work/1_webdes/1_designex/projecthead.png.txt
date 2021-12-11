@@ -1,3 +1,5 @@
 Alt: Sample images of Grey's design exercises
 
 ----
+
+Template: files/coverimg

@@ -1,0 +1,13 @@
+Caption: 
+
+----
+
+Class: 
+
+----
+
+Template: blocks/image
+
+----
+
+Sort: 2

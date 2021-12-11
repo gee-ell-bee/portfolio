@@ -48,6 +48,11 @@
             flex-flow: wrap row;
             justify-content: center;
         }
+
+        #contact .hony {
+            position: absolute;
+            left: -9999px;
+        }
         
         #contact fieldset {
             flex: 0 1 100%;

@@ -1,3 +1,9 @@
 Alt: Samples of design content from Grey's Noah Franklin B&amp;B project
 
 ----
+
+Template: files/coverimg
+
+----
+
+Sort: 1

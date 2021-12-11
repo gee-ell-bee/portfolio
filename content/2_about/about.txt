@@ -2,15 +2,13 @@ Title: About
 
 ----
 
+Portrait:
+
+- profile.png
+
+----
+
 Pagenm: About Grey
-
-----
-
-Dataid: about
-
-----
-
-Portrait: profile1.jpg
 
 ----
 
@@ -27,3 +25,7 @@ Headertwo: Learning &amp; Skills
 ----
 
 Texttwo: Grey studied history at Smith College c/o 2019, focusing on power, colonial&shy;ism & social change, though offi&shy;cially concen&shy;trating in East Asian history. At Smith they devel&shy;oped valuable tools in crit&shy;ical thinking, textual & his&shy;torical analysis, and com&shy;mun&shy;ication. After undergrad, they moved back to the Bay and decided to pursue visual arts. They cur&shy;rently study studio art and web design at Diablo Valley College.
+
+----
+
+Dataid: about

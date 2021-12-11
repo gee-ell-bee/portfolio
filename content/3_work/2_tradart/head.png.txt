@@ -5,3 +5,5 @@ Alt: Examples of Grey's traditional art projects
 Class:
 
 ----
+
+Template: files/coverimg

@@ -2,21 +2,9 @@ Title: Traditional Art
 
 ----
 
-Pagenm: Traditional Art
-
-----
-
-Dataid: tradart
-
-----
-
 Cover:
 
 - head.png
-
-----
-
-Boxstyle: box2
 
 ----
 
@@ -28,6 +16,16 @@ Reverse: reverse
 
 ----
 
-Cardimg: 
+Boxstyle: box2
 
 ----
+
+Pagenm: Traditional Art
+
+----
+
+Dataid: tradart
+
+----
+
+Cardimg: 

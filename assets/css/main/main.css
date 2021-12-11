@@ -251,7 +251,7 @@ main * {
   transition: all 1.5s ease-in-out 0s;
 }
 
-.card ul {
+.card ul, ul.projtop {
   height: auto;
   list-style: none;
   padding: .25rem;
@@ -266,11 +266,11 @@ main * {
   margin-top: 0;
 }
 
-.card ul li {
+.card ul li, ul.projtop li {
   padding: .125rem;
 }
 
-.card ul .label {
+.card ul .label, ul.projtop .label {
   display: inline-block;
   font-weight: bold;
   text-align: right;
