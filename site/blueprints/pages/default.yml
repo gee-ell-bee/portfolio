@@ -14,12 +14,13 @@ columns:
       content:
         type: fields
         fields:
-          headline:
+          pagenm:
             label: Headline
             type: text
           text:
             label: Text
             type: textarea
+            size: medium
 
   # sidebar
   sidebar:

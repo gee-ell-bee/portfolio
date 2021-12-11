@@ -29,6 +29,6 @@ columns:
         type: email
         help: Location form submissions will be sent to
       dataid:
-        label: CSS File ID Name
+        label: HTML ID Name
         type: text
         help: Recommended use the same as URL appendix

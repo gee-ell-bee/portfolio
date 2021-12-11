@@ -1,9 +1,10 @@
-title: Default File
+title: Cover Images
 options:
   changeName: true
   delete: true
   replace: true
-
+  update: true
+  
 columns:
   main:
     width: 1/2

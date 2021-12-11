@@ -1,4 +1,37 @@
 title: Site
-preset: pages
 unlisted: true
-  
+options:
+  changeTitle: false
+  delete: false
+
+columns:
+  - width: 2/3
+    sections:
+      drafts:
+        type: pages
+        status: draft
+        limit: 3
+        image: page.image.findBy("name", "cover")
+      unlisted:
+        type: pages
+        status: unlisted
+        limit: 3
+      published:
+        type: pages
+        status: listed
+        limit: 6
+        layout: cards
+        image: page.image.findBy("name", "cover")
+          cover: true
+
+  - width: 1/3
+    sections:
+      files:
+        type: files
+        headline: Universal Files
+        query: site.find(all)
+        info: {{ parent.title }}
+        limit: 3
+        search: true
+        image:
+          cover: true

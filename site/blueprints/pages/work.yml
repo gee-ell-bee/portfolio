@@ -1,4 +1,8 @@
 title: Work
+navigation:
+  status: all
+  template: all
+  
 columns:
   - width: 1/1
     sections:

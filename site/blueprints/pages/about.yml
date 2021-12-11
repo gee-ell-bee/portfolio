@@ -37,7 +37,7 @@ columns:
                     
     - width: 1/1
         sections:
-            end:
+            bottom:
                 type: fields
                 fields:
                     headertwo:
@@ -47,3 +47,10 @@ columns:
                         label: Text 2
                         type: textarea
                         size: small
+            end:
+                type: files
+                headline: All Files
+                layout: cards
+                size: small
+                image:
+                    cover: true

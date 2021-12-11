@@ -11,12 +11,17 @@ columns:
             one:
                 type: headline
                 label: Mediums
+            two:
+                type: pages
+                query: pagepicker.itemsForQuery("pages")
+                info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
     main:
         width: 2/3
         sections:
             drafts:
-                type: pages
-                query: site.page("work")
+                type: files
+                query:
+                    fetch: site.page("work").children
                 unlisted: true
                 layout: cardlets
                 template: Medium
@@ -28,8 +33,8 @@ columns:
             published:
                 type: pages
                 headline: Published Projects
-                query: site.page("work")
+                query:
+                    fetch: site.page("work").children
+                info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
                 layout: cardlets
                 width: 1/3
-                info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
-

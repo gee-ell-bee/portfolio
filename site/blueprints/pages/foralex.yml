@@ -1,11 +1,7 @@
-title: "Project: Gallery"
+title: Medium - Demo
 navigation:
     status: all
     template: all
-options:
-    changeTemplate:
-        - projstandard
-        - gallery
 
 columns:
     parenthead:
@@ -27,20 +23,24 @@ columns:
     firstcol:
         width: 1/3
         sections:
-            parentcov:
+    ** this bit here is what you want:
+            parentcov: ** just a random title
                 type: fields
                 fields:
-                    cover:
+                    cover: ** name of field
                         type: files
                         label: Cover Image
                         layout: cards
                         size: tiny
-                        image: page.image.findBy("name", "cover")
+                        query: page.images
+                        image:
                             ratio: 3/2
                             cover: true
+                        ** these two "min" and "max" are the number of files users
+                        are allowed to select
                         min: 1
                         max: 1
-            
+    ** ends here
     secondcol:
         width: 1/3
         sections:
@@ -97,11 +97,6 @@ columns:
             pagehead:
                 type: fields
                 fields:
-                    features:
-                        type: textarea
-                        size: small
-                        icon: list-bullet
-                        help: Short list of project highlights
                     second:
                         label: Page Content
                         icon: display
@@ -115,29 +110,22 @@ columns:
                         icon: title
                         maxlength: 17
                         help: Page headline
-                        width: 1/2
+                        width: 1/3
                     dataid:
-                        label: HTML ID Name
+                        label: CSS File ID Name
                         icon: template
                         type: text
-                        help: Recommended use the same as URL appendix
-                        width: 1/2
+                        help: "Recommended: Same as URL appendix"
+                        width: 1/3
                     cardimg:
                         label: Card Layout Style
                         type: radio
                         icon: grid
-                        width: 1/2
+                        width: 1/3
                         options:
                             " ": Split Title/Photo
                             underlay: Title w/ Photo Underlay
-                    tags:
-                        type: tags
-                        icon: tag
-                        width: 1/2
             files:
                 type: files
-                headline: All Images
-                query:
-                    fetch: page.images
+                headline: All Files
                 type: files
-                template: files/coverimg
