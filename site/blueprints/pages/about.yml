@@ -10,6 +10,7 @@ columns:
                         type: files
                         headline: Portrait
                         layout: cards
+                        template: files/image
                         query: page.images
                         min: 1
                         max: 1

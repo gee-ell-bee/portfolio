@@ -6,10 +6,31 @@ navigation:
 columns:
   - width: 1/1
     sections:
-      pages:
-        headline: Mediums
+      drafts:
+        headline: Rough Drafts
         type: pages
+        status: drafts
+        empty: No drafts! Yay!
+        width: 1/1
+
+  - width: 2/3
+    sections:
+      unlisted:
+        headline: Working Drafts
+        type: pages
+        status: unlisted
+        empty: No drafts! Yay!
         layout: cards
         size: small
+
+  - width: 1/3
+    sections:
+      published:
+        headline: Published Mediums
+        type: pages
+        status: listed
+        width: 1/3
+        layout: cardlets
+        size: tiny
         image:
           cover: true

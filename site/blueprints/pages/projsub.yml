@@ -1,12 +1,11 @@
-title: "Project: Gallery"
+title: "Project: Gallery Subpage"
 navigation:
-    status: all
-    template: all
+  status: all
+  template: all
 options:
     changeTemplate:
-        - projstandard
-        - gallery
-        - projsub
+        - projgallery
+        -projstandard
 
 columns:
     parenthead:
@@ -14,17 +13,15 @@ columns:
         type: fields
         fields:
             first:
-                label: Parent Page Content
+                label: Gallery Page Content
                 type: headline
     sidebarhead:
         width: 1/3
-        sticky: true
         type: fields
         fields:
             third:
-                label: Subpages
+                label: Files
                 type: headline
-    
     firstcol:
         width: 1/3
         sections:
@@ -33,16 +30,16 @@ columns:
                 fields:
                     cover:
                         type: files
-                        template: files/coverimg
                         label: Cover Image
+                        template: files/coverimg
                         layout: cards
                         size: tiny
-                        image: page.images
+                        query: page.images
+                        image:
                             ratio: 3/2
                             cover: true
                         min: 1
                         max: 1
-            
     secondcol:
         width: 1/3
         sections:
@@ -50,7 +47,7 @@ columns:
                 type: fields
                 fields:
                     row:
-                        label: "Cover Card: Box Ratio"
+                        label: "Gallery Card: Box Ratio"
                         type: select
                         default: false
                         options:
@@ -62,35 +59,29 @@ columns:
                             sixtwosplit: "6/2 Split"
                             sevonesplit: "7/1 Split"
                     reverse:
-                        label: "Cover Card: Box Order"
+                        label: "Gallery Card: Box Order"
                         type: select
                         default: " "
                         options:
                             " ": Title + Image
                             reverse: Image + Title
                     boxstyle:
-                        label: "Cover Card: Title Box Style"
+                        label: "Gallery Card: Title Box Style"
                         type: select
                         default: false
                         options:
                             box1: Light Camel Box
                             box2: Rich Caramel Box
                             box3: Deep Tan Box
-
-
     thirdcol:
         width: 1/3
         sticky: true
         sections:
-            projects:
-                type: pages
-                unlisted: true
-                drafts: true
-                layout: cardlets
+            files:
+                label: All Files
+                type: files
                 image:
                     cover: true
-                info: "{{ page.row }}/{{ page.reverse }}/{{page.boxstyle }}"
-
 
     bottomtwth:
         width: 2/3
@@ -117,27 +108,37 @@ columns:
                         maxlength: 17
                         help: Page headline
                         width: 1/2
+                        required: true
                     dataid:
                         label: HTML ID Name
                         icon: template
                         type: text
                         help: Recommended use the same as URL appendix
                         width: 1/2
-                    cardimg:
-                        label: Card Layout Style
-                        type: radio
-                        icon: grid
-                        width: 1/2
-                        options:
-                            " ": Split Title/Photo
-                            underlay: Title w/ Photo Underlay
+                        required: true
                     tags:
+                        type: tags
+                        width: 1/2
+                    tools:
                         type: tags
                         icon: tag
                         width: 1/2
-            files:
-                type: files
-                headline: All Images
-                query:
-                    fetch: page.images
-                type: files
+                    year:
+                        before: Completed
+                        type: number
+                        minvalue: 2009
+                        maxlength: 4
+                        width: 1/3
+                    role:
+                        type: text
+                        width: 1/3
+                    duration:
+                        type: text
+                        width: 1/3
+                    link:
+                        label: Live Preview Link
+                        type: url
+                    overview:
+                        type: textarea
+                        size: small
+                        help: Short description of what is important about this project

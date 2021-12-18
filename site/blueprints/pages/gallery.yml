@@ -29,6 +29,7 @@ columns:
                 fields:
                     cover:
                         type: files
+                        template: files/coverimg
                         label: Cover Image
                         layout: cards
                         size: tiny
@@ -83,7 +84,9 @@ columns:
                 unlisted: true
                 drafts: true
                 layout: cardlets
+                options: query
                 image:
+                    query: page.images.first
                     cover: true
                 info: "{{ page.row }}/{{ page.reverse }}/{{page.boxstyle }}"
 

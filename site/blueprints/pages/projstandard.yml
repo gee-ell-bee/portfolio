@@ -5,6 +5,7 @@ navigation:
 options:
     changeTemplate:
         - projgallery
+        - projsub
 
 columns:
     parenthead:
@@ -30,8 +31,9 @@ columns:
                     cover:
                         type: files
                         label: Cover Image
+                        template: files/coverimg
                         layout: cards
-                        size: tiny
+                        size: small
                         query: page.images
                         image:
                             ratio: 3/2
@@ -136,13 +138,9 @@ columns:
                     link:
                         label: Live Preview Link
                         type: url
-                    overview:
-                        type: textarea
-                        size: small
-                        help: Best to only use this field if this is in a project gallery
                     layout:
                         type: layout
-                        help: Best to use this field if the project is a direct child of a medium
+                        help: Description & Content of Project
                         layouts:
                             - "1/2, 1/2"
                             - "1/4, 1/2, 1/4"

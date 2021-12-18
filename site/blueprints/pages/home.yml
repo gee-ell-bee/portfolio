@@ -12,29 +12,37 @@ columns:
                 type: headline
                 label: Mediums
             two:
+                label: Rough Drafts
                 type: pages
-                query: pagepicker.itemsForQuery("pages")
+                subpages: false
+                query: site.page("work").children.drafts
                 info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
     main:
         width: 2/3
-        sections:
+        type: fields
+        fields:
             drafts:
-                type: files
-                query:
-                    fetch: site.page("work").children
-                unlisted: true
+                type: pages
+                label: Working Drafts
+                subpages: false
+                query: site.page("work").children.unlisted
                 layout: cardlets
-                template: Medium
+                size: tiny
+                image:
+                    cover: true
                 info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
-                width: 2/3
+
     side:
         width: 1/3
-        sections:
+        type: fields
+        fields:
             published:
                 type: pages
-                headline: Published Projects
-                query:
-                    fetch: site.page("work").children
+                label: Published Pages
+                subpages: false
+                query: site.page("work").children.listed
                 info: "{{ page.row }}/{{ page.reverse }}/{{ page.boxstyle }}"
+                image:
+                    cover: true
                 layout: cardlets
                 width: 1/3
