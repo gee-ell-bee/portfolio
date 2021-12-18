@@ -18,7 +18,10 @@
     <?= css('assets/css/main/main.css') ?>
     <?= css('assets/css/main/header.css') ?>
     <?= css('assets/css/main/nav.css') ?>
+    <?= css('assets/css/main/boxes.css') ?>
+
     <?= css('@auto') ?>
+    
     <link rel="stylesheet" href="https://use.typekit.net/hwm5vyl.css" type="text/css" />
 
     <script defer src="<?= $site->url() ?>/assets/js/main.js"></script>
