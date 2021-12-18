@@ -3,6 +3,8 @@
 
 <?= snippet('head') ?>
 
+<?= snippet('variables') ?>
+
 <body id="<?= $page->dataid() ?>">
     <div id="whole">
         <!-- header -->
@@ -15,7 +17,22 @@
                 <?= snippet('titl') ?>
                 <?= snippet('cards/projectception') ?>
 
-                <a class="button" href="<?= $page->parent()->url() ?>"><span class="arrow">&larr;</span> Return to <?= $page->parent()->title() ?></a>
+            <!--<nav>
+                <ul>
+                    <li> -->
+                        <a class="button lg fwd" href="<?= $next->url() ?>">
+                            <?= $next->title() ?><span class="arrow">&rarr;</span>
+                        </a>
+                    <!--</li>
+
+                    <li>-->
+                        <a class="button" href="<?= $page->parent()->url() ?>">
+                            <span class="arrow">&larr;</span>
+                            Return to <?= $page->parent()->title() ?>
+                        </a>
+                    <!--</li>
+                </ul>
+            </nav>-->
             </article>
 
             <?= snippet('footer') ?>

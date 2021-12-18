@@ -46,7 +46,6 @@
             <input type="email"
               id="email"
               name="email"
-              minlength="5"
               placeholder="name@website.com"
               autocomplete="on"
               value="<?= esc($data['email'] ?? '', 'attr') ?>"
