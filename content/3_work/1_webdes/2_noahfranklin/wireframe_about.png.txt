@@ -1,0 +1,29 @@
+Caption: 
+
+----
+
+Class: 
+
+----
+
+Alt: The Noah Franklin "About" Page Wireframe
+
+----
+
+Photographer: 
+
+----
+
+License: 
+
+----
+
+Link: 
+
+----
+
+Template: blocks/image
+
+----
+
+Sort: 2

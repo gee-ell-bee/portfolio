@@ -1,0 +1,429 @@
+/*  #region MOBILE */
+
+    /* #region MOBILE CARDS */
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-gap: var(--mainGridGap);
+            margin: var(--mainGridGap) 0;
+        }
+
+        /* cards lists */
+
+        .card ul, ul.projtop {
+            height: auto;
+            list-style: none;
+            padding: .25rem;
+            transition: all 1.5s ease-in-out 0s;
+        }
+
+        .card ul li, ul.projtop li {
+            padding: .125rem;
+        }
+        
+        .card ul .label, ul.projtop .label {
+            display: inline-block;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        /* #region CARDS box row styles */
+
+            .one {
+                grid-area: a;
+            }
+    
+            .two {
+                grid-area: b;
+            }
+    
+            /* #region CARDS all row styles */
+
+                /* reversed span content */
+
+                    a.one {
+                        /*ONE: LEFT*/
+                        padding: 0 .5rem 0 0;
+                    }
+                    
+                    .card.reverse a.one {
+                        /*ONE: RIGHT*/
+                        padding: 0 0 0 .5rem;
+                    }
+
+                    .card.reverse .box.one span.left {
+                        display: inline;
+                    }
+                    
+                    .card.reverse .box.one span.right {
+                        display: none;
+                    }
+
+                    .box.one h3 {
+                        text-align: right;
+                    }
+                    
+                    .card.reverse .box.one h3 {
+                        text-align: left;
+                    }
+                    
+                    .box.one span.left {
+                        display: none;
+                    }
+        
+
+                /* layout styles */
+
+                    .thrfivsplit {
+                        grid-template-areas:
+                        "a a a b b b b b";
+                    }
+                    
+                    .thrfivsplit.reverse {
+                        grid-template-areas:
+                        "b b b b b a a a";
+                    }
+                    
+                    .evensplit {
+                        grid-template-areas:
+                        "a a a a b b b b";
+                    }
+                    
+                    .evensplit.reverse {
+                        grid-template-areas:
+                        "b b b b a a a a";
+                    }
+                    
+                    .fivthrsplit {
+                        grid-template-areas:
+                        "a a a a a b b b";
+                    }
+                    
+                    .fivthrsplit.reverse {
+                        grid-template-areas:
+                        "b b b a a a a a";
+                    }
+                    
+                    .twosixsplit {
+                        grid-template-areas:
+                        "a a b b b b b b";
+                    }
+                    
+                    .sixtwosplit {
+                        grid-template-areas:
+                        "a a a a a a b b";
+                    }
+                    
+                    .sixtwosplit.reverse {
+                        grid-template-areas:
+                        "b b b b b b a a"
+                    }
+                    
+                    .twosixsplit.reverse {
+                        grid-template-areas:
+                        "b b a a a a a a"
+                    }
+                    
+                    .onesevsplit {
+                        grid-template-areas:
+                        "a b b b b b b b";
+                    }
+                    
+                    .onesevsplit.reverse {
+                        grid-template-areas:
+                        "b a a a a a a a";
+                    }
+                    
+                    .sevonesplit {
+                        grid-template-areas:
+                        "a a a a a a a b"
+                    }
+                    
+                    .sevonesplit.reverse {
+                        grid-template-areas:
+                        "b b b b b b b a"
+                    }
+            /* #endregion */
+
+        /* #endregion */
+        
+        /* #region CARDS: expanders */
+
+            .card .carrot {
+                content: url(../../../content/carrot.svg);
+            
+                align-content: center;
+                width: 1rem;
+            
+                transition: transform .5s ease-in-out;
+            }
+
+            /* ROTATE CLASS from nav.css
+            (adds on .rotate class to .card .carrot)
+
+            .rotate {
+            transform: rotate(180deg);
+            transition: transform .5s ease-in-out;
+            } */
+            
+            .card a h3 {
+                cursor: pointer;
+                position: relative;
+            }
+            
+            .card .box.expander {
+                height: auto;
+            }
+            
+            .descContain {
+                overflow: hidden;
+                height: 100%;
+                transition: all 1.5s ease-in-out 0s;
+            }
+            
+            .card ul.desc {
+                margin-top: -125%;
+            }
+            
+            .card ul.desc.sho {
+                margin-top: 0;
+            }
+        /* #endregion */
+        
+    /* #endregion*/
+
+    /* #region MOBILE BOX */
+
+        /* general content formatting */
+            main h3 {
+                /* ---- Link Headers --------- */
+                padding: 0;
+                margin: auto;
+                font-family: 'mencken-std-head', Rufina, Georgia, serif;
+                font-size: clamp(28px, 7vmin, 7vmin);
+                line-height: 1;
+            }
+            
+            /* main h3:last-of-type { padding-right: 0;} */
+
+            div.box,
+            ul.box,
+            ol.box {
+                padding: 1rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+        
+        /* #region BOX links: general content formatting */
+
+            a.box {
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+            
+                text-decoration: none;
+                color: black;
+            }
+            
+            a.box:hover {
+                opacity: .7;
+            }
+            
+            a.box h3 {
+                padding: .25rem;
+                width: 100%;
+            }
+        
+            /* image box */
+                img,
+                source {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                main>picture:hover,
+                main>img:hover {    opacity: .5;}
+                
+                .animat {    object-position: left;}
+            
+            /* box 1 */
+                .box1 {    background-color: var(--box1Bg);}
+                .box1:hover {    background-color: var(--box1BgHov);}
+            
+            /* box 2 */
+                .box2 {    background-color: var(--box2Bg);}
+                .box2:hover {    background-color: var(--box2BgHov);}
+            
+            /* box 3 */
+                .box3 {    background-color: var(--box3Bg);}
+                .box3:hover {    background-color: var(--box3BgHov);}
+        
+            
+            /* boxes w/ img cover */
+                .boxCover {
+                    background-color: rgba(255, 255, 255, .6);
+                    overflow: hidden;
+                }
+                
+                .boxCover:hover {
+                    background-color: rgba(255, 255, 255, .3);
+                }
+                
+                a.boxCover {
+                    color: var(--link);
+                }
+                
+                a.boxCover:hover {
+                    color: var(--drpLnk);
+                }
+
+            /* box Expands */
+            /* quickly looked through & couldn't find any use case of .boxExpand,
+                but still need to look @ snippets & templates to be sure */
+
+                .boxExpand {
+                    margin: 0;
+                }
+        
+        /* #endregion */
+    
+        /* #region BOX MOBILE onUnload Transition */
+
+            .onUnloadLeft {
+                transform: translateX(-800px);
+                transition: all 1s ease-out;
+            }
+            
+            .onUnloadRight {
+                transform: translateX(800px);
+                transition: all 1s ease-out;
+            }
+        /* #endregion */
+        
+    /* #endregion */
+
+    /* #region MOBILE LAYOUT FIELD */
+        .grid {
+            display: grid;
+            grid-gap: var(--mainGridGap);
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .grid .block-type-image figure {
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid .block-type-image {
+            border: 1px solid;
+        }
+
+        .grid ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+    /* #endregion */
+
+/* #endregion */
+  
+/* #region Media Queries */
+
+    /* #region Cards Media Query */
+    @media only screen and (max-width: 400px) {
+        .card {
+        display: flex;
+        flex-flow: wrap column;
+        grid-gap: 0;
+        margin-bottom: var(--mainGridGap);
+        }
+    
+        .card img {
+        max-height: 9rem;
+        }
+    
+        .card img.behind {
+        max-height: 5rem;
+        }
+    
+    
+        .one,
+        .two {
+        display: block;
+        width: 100vw;
+        }
+    
+    }
+    /* #endregion*/
+
+    /* #region DESKTOP Media Query */
+    @media only screen and (min-width: 800px) {
+
+        /* #region DESKTOP CARDS */
+
+            /* #region DESKTOP CARDS general formatting */
+                .card .carrot {    width: 1rem;}
+            /* #endregion */
+
+            /* #region DESKTOP CARDS row styles */
+
+                /* reversed span content */
+                    a.one h3 {    transform: translateX(-1rem);}
+                    a.one:hover h3 {    transform: translateX(0.5rem);}
+                    
+                    .card.reverse a.one h3 {    transform: translateX(1rem);}
+                    .card.reverse a.one:hover h3 {
+                        transform: translateX(-.5rem);
+                    }
+                    
+                    /*a.one {  padding: 0 0 0 1.5rem;}
+                    .card.reverse a.one {  padding: 0 1.5rem 0 0;}*/
+            /* #endregion */
+
+        /* #endregion*/
+
+        /* #region DESKTOP BOX */
+            /* #region DESKTOP BOX general content formatting */
+                main h3 {
+                    width: 100%;
+                    line-height: 1.25;
+                    font-size: 2rem;
+                }
+                /*main h3:last-of-type {  padding-right: 0;}*/
+            /* #endregion*/
+            /* #region DESKTOP BOX box styles */
+                /* box 1 */
+                    .box1 {    background-color: var(--box1Bg);}
+                    .box1:hover {    background-color: var(--box1Bg);}
+                
+                /* image boxes */
+                    main>picture:hover,
+                    main>img:hover {    opacity: 1;}
+                
+                    main img.behind {    max-height: 100%;}
+                
+                /* box 2 */
+                    .box2 {    background-color: var(--box2Bg);}
+                    .box2:hover {    background-color: var(--box2Bg);}
+                
+                /* box 3 */
+                    .box3 {    background-color: var(--box3Bg);}
+                    .box3:hover {    background-color: var(--box3Bg);}
+                
+                /* text boxes */
+                .text:nth-of-type(1) {    margin-top: auto;}
+
+            /* #endregion */
+
+        /* #endregion */         
+    }
+    /* #endregion*/
+
+/* #endregion*/

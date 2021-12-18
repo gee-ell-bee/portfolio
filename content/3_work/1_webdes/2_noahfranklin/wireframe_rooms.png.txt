@@ -1,0 +1,29 @@
+Caption: 
+
+----
+
+Class: 
+
+----
+
+Alt: The Noah Franklin "Rooms" Page Wireframe
+
+----
+
+Photographer: 
+
+----
+
+License: 
+
+----
+
+Link: 
+
+----
+
+Template: blocks/image
+
+----
+
+Sort: 3

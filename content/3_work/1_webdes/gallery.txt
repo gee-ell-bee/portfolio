@@ -2,6 +2,14 @@ Title: Web Design
 
 ----
 
+Pagenm: Web Design
+
+----
+
+Dataid: webdes
+
+----
+
 Cover:
 
 - head.png
@@ -17,14 +25,6 @@ Reverse:
 ----
 
 Boxstyle: box1
-
-----
-
-Pagenm: Web Design
-
-----
-
-Dataid: webdes
 
 ----
 

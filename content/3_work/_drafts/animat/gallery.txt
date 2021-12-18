@@ -1,0 +1,30 @@
+Title: Animations
+
+----
+
+Pagenm: Animations
+
+----
+
+Dataid: animat
+
+----
+
+Cover:
+
+----
+
+Boxstyle: box2
+
+----
+
+Row: fivthrsplit
+
+----
+
+Reverse:
+
+----
+
+Cardimg: 
+

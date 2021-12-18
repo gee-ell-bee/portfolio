@@ -2,6 +2,18 @@ Title: Design Exercises
 
 ----
 
+Pagenm: Design Exercises
+
+----
+
+Dataid: designex
+
+----
+
+Tags: css, css animation, animation, grid, coding
+
+----
+
 Cover:
 
 - projecthead.png
@@ -20,6 +32,10 @@ Boxstyle: box3
 
 ----
 
+Cardimg: 
+
+----
+
 Features:
 
 <ul>
@@ -29,16 +45,3 @@ Features:
 
 ----
 
-Pagenm: Design Exercises
-
-----
-
-Dataid: designex
-
-----
-
-Cardimg: 
-
-----
-
-Tags: css, css animation, animation, grid, coding

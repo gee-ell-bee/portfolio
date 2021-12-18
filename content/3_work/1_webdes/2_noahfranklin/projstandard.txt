@@ -4,7 +4,7 @@ Title: The Noah Franklin
 
 Cover:
 
-- projecthead.png
+- noahfrankhead.png
 
 ----
 
@@ -61,12 +61,12 @@ Link: http://www.greybei.rf.gd/artdm171/projects/project3
 
 ----
 
-Overview: First complete website I created.
-
-----
-
-Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["noah-frank-wires.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"0a860abb-b293-4586-acdb-1d19a26b5962","isHidden":false,"type":"image"}],"id":"02eb8445-6d95-4290-a556-831b4cf4769b","width":"1\/4"},{"blocks":[{"content":{"location":"kirby","image":["about.png"],"src":"","alt":"The Noah Franklin \"About\" Page Wireframe","caption":"","link":"","ratio":"","crop":"false"},"id":"aaf35335-e2ce-4e6a-be12-bbc855c77ad4","isHidden":false,"type":"image"}],"id":"d289f7ad-f502-4744-994a-7c38a2ccad12","width":"1\/4"},{"blocks":[{"content":{"text":"<ul><li>Emphasized the rooms and their unique qualities using a grid button layout that previews the room description and the room photo.<\/li><li>Created visual interest and emphasis with large blockquotes or special divs for highlights.<\/li><li>Improved ease of access and readability by adding large, button-esque links to other pages with relevant information.<\/li><\/ul>"},"id":"c53b2951-b170-4299-b160-ce19807153c1","isHidden":false,"type":"list"}],"id":"e94dee57-d9eb-4721-9e79-67eb292fb4b9","width":"1\/2"}],"id":"01d19423-6d99-4808-8cc3-1f4b4ede4149"}]
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["wireframe_rooms.png"],"src":"","alt":"The Noah Franklin \"Rooms\" Page Wireframe","caption":"","link":"","ratio":"","crop":"false"},"id":"aaf35335-e2ce-4e6a-be12-bbc855c77ad4","isHidden":false,"type":"image"}],"id":"02eb8445-6d95-4290-a556-831b4cf4769b","width":"1\/4"},{"blocks":[{"content":{"location":"kirby","image":["wireframe_about.png"],"src":"","alt":"The Noah Franklin \"About\" Page Wireframe","caption":"","link":"","ratio":"","crop":"false"},"id":"0a860abb-b293-4586-acdb-1d19a26b5962","isHidden":false,"type":"image"}],"id":"d289f7ad-f502-4744-994a-7c38a2ccad12","width":"1\/4"},{"blocks":[{"content":{"text":"<ul><li>Emphasized the rooms and their unique qualities using a grid button layout that previews the room description and the room photo.<\/li><li>Created visual interest and emphasis with large blockquotes or special divs for highlights.<\/li><li>Improved ease of access and readability by adding large, button-esque links to other pages with relevant information.<\/li><\/ul>"},"id":"c53b2951-b170-4299-b160-ce19807153c1","isHidden":false,"type":"list"}],"id":"e94dee57-d9eb-4721-9e79-67eb292fb4b9","width":"1\/2"}],"id":"01d19423-6d99-4808-8cc3-1f4b4ede4149"}]
 
 ----
 
 Cardimg: 
+
+----
+
+Overview: First complete website I created.

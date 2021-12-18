@@ -39,10 +39,14 @@
         grid-area: f;
     }
 
-/* #region About page */
+/* #region About page General content formatting */
 
     .aboutTop {
         margin-top: 1.5rem;
+    }
+
+    .text:nth-of-type(1) {
+        padding-top: 1rem;
     }
     
     .aboutImg {
@@ -61,39 +65,56 @@
         display: inline-block;
     }
 
-    
 /* #endregion */
 
-@media only screen and (min-width: 800px) and (max-width: 840px) {
-    .aboutImg {
-        width: 35%;
-        margin: .25rem 1.5rem 1rem 0;
-    }
-}
+/* #region media queries */
 
-@media only screen and (max-width: 550px) {
-    main article {
-        grid-template-rows: auto;
-        grid-gap: 0;
-        grid-template-areas: 
-        "a a a a a a a a"
-        "b b b b b b b b"
-        "c c c c c c c c"
-        "e e e e e e e e"
-        "d d d d d d d d"
-        "f f f f f f f f";
+    /* #region ABOUT PAGE TYPE media query */
+    @media only screen and (min-width: 800px) and (max-width: 900px) {
+        main h2 {
+        font-size: 1.8rem;
+        text-indent: 1rem;
+        width: max-content;
+        }
     }
+    
+    /* #endregion */
 
-    .aboutImg {
-        width: 90%;
-        object-fit: cover;
-        object-position: 0 30%;
-        max-height: 40vh;
-        float: right;
-        margin: 0 auto 2rem auto;
+    /* #region ABOUT PAGE IMAGE media query */
+    @media only screen and (min-width: 800px) and (max-width: 840px) {
+        .aboutImg {
+            width: 35%;
+            margin: .25rem 1.5rem 1rem 0;
+        }
     }
+    /* #endregion */
 
-    main p {
-        margin: .5rem 1rem 1.5rem 1rem;
+    /* #region ABOUT PAGE EXTRA MOBILE FORMATTING */
+    @media only screen and (max-width: 550px) {
+        main article {
+            grid-template-rows: auto;
+            grid-gap: 0;
+            grid-template-areas: 
+            "a a a a a a a a"
+            "b b b b b b b b"
+            "c c c c c c c c"
+            "e e e e e e e e"
+            "d d d d d d d d"
+            "f f f f f f f f";
+        }
+
+        .aboutImg {
+            width: 90%;
+            object-fit: cover;
+            object-position: 0 30%;
+            max-height: 40vh;
+            float: right;
+            margin: 0 auto 2rem auto;
+        }
+
+        main p {
+            margin: .5rem 1rem 1.5rem 1rem;
+        }
     }
-}
+    /* #endregion */
+/* #endregion */
